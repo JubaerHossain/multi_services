@@ -1,0 +1,39 @@
+.navbar-vertical.navbar-expand-lg{
+    z-index: 999 !important;
+}
+#livesearch>.list-group{
+    background:#354052 ;
+    color: white;
+}
+#livesearch>.list-group:hover{
+    color:#354052 ;
+    background: white;
+}
+#livesearch{
+    position: absolute;
+    z-index: 9;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.selectize-dropdown-content>.option{
+  cursor: pointer !important;
+}
+
+body {
+    display: none;
+    color: #415094;
+  }
+  label.error {
+    position: relative;
+    top: 6px;
+    display: block !important;
+    margin: 0;
+    font-size: 12px;
+    color: #FF0000;
+  }
+ .gj-datepicker-bootstrap [role=right-icon] button {
+        height: 100%;
+  }
+  .custom_add_sub i{
+    cursor: pointer;
+  }

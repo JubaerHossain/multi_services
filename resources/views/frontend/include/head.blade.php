@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="{{ @footers()->footer_description }}">
+        <!-- Bootstrap Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/bootstrap.min.css">
+        <!-- Animate Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/animate.min.css">
+        <!-- Font Awesome Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/fontawesome.min.css">
+        <!-- Box Icons Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/boxicons.min.css">
+        <!-- Flaticon CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/flaticon.css">
+        <!-- Owl Carousel Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/owl.carousel.min.css">
+        <!-- Magnific Popup Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/magnific-popup.min.css">
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/nice-select.css">
+        <!-- Mean Menu CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/meanmenu.css">
+        <!-- Progress Circle Min CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/progresscircle.min.css">
+        <!-- Style CSS -->
+        <link rel="stylesheet" href="{{asset('public/css/toastr.css')}}">
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/style.css">
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/responsive.css">
+        <title>X-teamit - @yield('title')</title>
+        <meta name="author" content="{{get_setting()->site_name}}">
+
+        <link rel="icon" href="{{asset(get_setting()->favicon)}}" type="image/x-icon"/>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/custom.css">
+        @stack('css')
+    </head>

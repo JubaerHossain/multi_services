@@ -1,0 +1,19 @@
+
+body{
+    color: #fff !important;
+}
+table,table.dataTable tbody tr{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr>td, table.dataTable.dtr-inline.collapsed>tbody>tr{
+    color: #fff !important;
+}
+table>thead>tr>th{
+    color: #fff !important;
+}
+
+#table_filter>label{
+    color: #fff !important;
+}

@@ -1,0 +1,272 @@
+/*================================================
+Pricing Area CSS
+=================================================*/
+.pricing-area {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px;
+  }
+  
+  .single-pricing-box {
+    border: 1px solid #f5eafc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    border-radius: 5px;
+  }
+  
+  .single-pricing-box .pricing-header h3 {
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 700;
+    background: #0d1d3b;
+    background: linear-gradient(to right top, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b) !important;
+    padding: 17px 0 17px;
+    color: #fff;    
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .single-pricing-box .pricing-header p {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    line-height: 1.6;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .single-pricing-box .price {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .single-pricing-box .price span {
+    display: inline-block;
+    margin-left: -7px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  
+  .single-pricing-box .buy-btn .btn-primary::after {
+    background: #182c51;
+  }
+  
+  .single-pricing-box .pricing-features {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding: 0px 30px 10px 30px;
+  }
+  .custom{
+    border-radius: 0 !important;
+    padding: 16px;
+  }
+  .custom::before{
+    border-radius: 0 !important;
+    padding: 16px;
+  }
+  .custom::after{
+    border-radius: 0 !important;
+    padding: 16px;
+  }
+  
+  .single-pricing-box .pricing-features li {
+    margin-bottom: 12px;
+    color: #57647c;
+    position: relative;
+    padding-left: 24px;
+  }
+  
+  .single-pricing-box .pricing-features li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .single-pricing-box .pricing-features li i {
+    color: #0ca59d;
+    font-size: 22px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .single-pricing-box:hover {
+    -webkit-box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.05);
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+  .buy-btn{
+    padding: 0px 10px 10px 10px; 
+  }
+  .single-pricing-box:hover .buy-btn .btn-primary::before {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .price-active{
+        -webkit-transform: translateY(+10px);
+        transform: translateY(+10px);
+        margin: -21px;
+        margin-top: -50px;
+  }
+  
+  .single-pricing-box:hover .buy-btn .btn-primary::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .pricing-tab .tabs {
+    padding-left: 0;
+    margin-bottom: 45px;
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  .pricing-tab .tabs li {
+    display: inline-block;
+  }
+  
+  .pricing-tab .tabs li a {
+    position: relative;
+    z-index: 1;
+    background-color: #e6fcfc;
+    padding: 10px 30px 11px;
+    margin-left: -2px;
+    margin-right: -2px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .pricing-tab .tabs li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, right top, from(#0ca59d), color-stop(#28aca4), color-stop(#39b2ab), color-stop(#47b9b3), to(#54c0ba));
+    background: linear-gradient(to right top, #0ca59d, #28aca4, #39b2ab, #47b9b3, #54c0ba);
+    z-index: -1;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  
+  .pricing-tab .tabs li a:hover {
+    color: #ffffff;
+  }
+  
+  .pricing-tab .tabs li a:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .pricing-tab .tabs li.current a {
+    color: #ffffff;
+  }
+  
+  .pricing-tab .tabs li.current a::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .pricing-tab .tabs li:nth-child(1) a {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .pricing-tab .tabs li:nth-child(1) a::before {
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .pricing-tab .tabs li:nth-child(2) a {
+    border-radius: 0 5px 5px 0;
+  }
+  
+  .pricing-tab .tabs li:nth-child(2) a::before {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .update_card{
+      padding: 0px !important;
+  }
+  .update_card h3{
+      padding: 25px 22px 5px 25px;
+  }
+  .update_card p{
+      padding: 0px 25px 16px 25px;
+  }
+  .course-time i{
+      font-size: 22px;
+      color: #182c51;
+  }
+  .card-footer>.btn-primary::after{
+    background: #0d1d3b;
+    background: linear-gradient(to right top, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b) !important;
+  }
+  .single-partnar{
+    position: relative;
+    z-index: 1;
+  }
+  .single-partnar img{
+      width: 40% !important;
+      text-align: center !important;
+  }
+  .custom_partnar .owl-item{
+     width: 200px !important;
+     margin-right: 0% !important;
+  }
+  .custom_partnar .owl-dots{
+    display: none;
+  }
+  .custom_btn::after{
+    background: #0d1d3b;
+    background: linear-gradient(to right top, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b, #0d1d3b) !important;
+  }
+
+  .custom_icon_social a::after,.custom_icon_social a:hover{
+    background-color: #0d1d3b !important;
+  }
+  a{
+    color: #0d1d3b;
+  }
+.service.single-services-box{
+  background-color: #182c51 !important;
+  color: #fff !important;
+}
+
+.service.single-services-box a, .service.single-services-box h3, .service.single-services-box p{
+  color: #fff !important;
+}
+.service.single-services-box:hover{
+  background-color: #0d1d3b !important;
+  color: #fff !important;
+}
+
+input#inlineFormInputGroup {
+  height: 58px;
+  line-height: initial;
+  border: 1px solid #0d1d3b;
+  padding-left: 10px;
+  color: #0d1d3b;
+  outline: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #fff;
+}
+.custom::before{
+  background: #0d1d3b;
+}
+.custom::after{
+  background: #0d1d3b;
+}
+.form-group .error{
+  color: red;
+  float: left !important;
+  margin-bottom: 5px;
+}
