@@ -34,7 +34,7 @@
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
                     <h2>{{ @about_company()->title }}</h2>
-                    <p>{!! @about_company()->description !!}</p>
+                    <p>{{ @about_company()->description }}</p>
                 </div>
             </div>
         </div>

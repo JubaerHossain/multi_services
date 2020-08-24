@@ -14,6 +14,11 @@ Route::group(['middleware' => ['admin'],'prefix'=>'admin','namespace' =>'Backend
         Route::resource('service','ServiceController');
         Route::get('services/delete/{id}', 'ServiceController@destroy');
         Route::get('services', 'ServiceController@getData')->name('service.data');
+        // Blog
+        Route::resource('blog','BlogController');
+        Route::get('blogs/delete/{id}', 'BlogController@destroy');
+        Route::post('tag-get', 'BlogController@GetTag');
+        Route::get('blogs', 'BlogController@getData')->name('blog.data');
         // Plan
         Route::resource('plan','PlanController');
         Route::get('plans/delete/{id}', 'PlanController@destroy');
@@ -77,8 +82,6 @@ Route::group(['middleware' => ['admin'],'prefix'=>'admin','namespace' =>'Backend
             Route::get('before-after', 'PageSettingController@Before_After');
             Route::post('before-after', 'PageSettingController@Before_AfterStore')->name('admin.Before_After');
         });
-        
-     
       
         });
 

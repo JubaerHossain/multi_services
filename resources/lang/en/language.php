@@ -121,4 +121,9 @@ return array(
     'mail_password'    => 'Email Password',
     'mail_encryption'    => 'Email Encryption',
     'slider'    => 'Slider',
+    'blog'    => 'Blog',
+    'category'    => 'Category',
+    'summary'    => 'Summary',
+    'content'    => 'Content',
+    'tag'    => 'Tag',
 );

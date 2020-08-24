@@ -28,7 +28,7 @@ class PageSettingController extends Controller
         try {
             $data = AboutCompany::find(1);
             $data->title = $request->title;
-            $data->description = $request->description;
+            $data->description =  $request->description;
             $file = $request->file('document'); 
             if($request->hasFile('document')){ 
                 $pathImage = 'public/uploads/about_us';

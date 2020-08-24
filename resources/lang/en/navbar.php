@@ -42,5 +42,7 @@ return array(
     'role_permission' => 'Role & Permission',
     'database_bakeup'    => 'Database Backup',
     'email_settings'    => 'Email Settings',
+    'blogs'    => 'Blogs',
+    'blog'    => 'Blog',
 
 );

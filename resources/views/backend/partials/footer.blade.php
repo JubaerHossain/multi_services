@@ -49,13 +49,13 @@
     @endforeach
     @endif
   </script>
-  <script>
+  {{-- <script>
     $(document).ready(function () {
         CKEDITOR.replace('textarea');
         CKEDITOR.replace('side');
     });
-    </script>
-<script>
+    </script> --}}
+  <script>
     document.body.style.display = "block"
   </script>
 

@@ -129,6 +129,29 @@
             </ul>
             
           </li>
+           <li class="nav-item {{ (request()->is('admin/blog*')) ? 'active' : '' }} dropdown">
+            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
+              <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>
+              </span>
+              <span class="nav-link-title">
+                @lang('navbar.blogs')
+              </span>
+            </a>
+            <ul class="dropdown-menu {{ (request()->is('admin/blog*')) ? 'show' : '' }}">             
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/blog/create')) ? 'active' : '' }}" href="{{ url('admin/blog/create')}}" >
+                  @lang('navbar.blog') @lang('navbar.create')
+                </a>
+              </li>
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/blog')) ? 'active' : '' }}" href="{{ url('admin/blog')}}" >
+                  @lang('navbar.blog') @lang('navbar.list')
+                </a>
+              </li>
+            </ul>
+            
+          </li>
+
            <li class="nav-item {{ (request()->is('admin/plan*')) ? 'active' : '' }} dropdown">
             <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
               <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>

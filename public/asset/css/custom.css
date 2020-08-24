@@ -37,3 +37,15 @@ body {
   .custom_add_sub i{
     cursor: pointer;
   }
+  
+  .select2-selection.select2-selection--multiple{
+    margin-left: -23px;
+    margin-right: -23px;
+  }
+
+  @media (max-width: 800px) {
+    .select2-selection.select2-selection--multiple{
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }

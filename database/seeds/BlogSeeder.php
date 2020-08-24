@@ -1,5 +1,6 @@
 <?php
 
+use App\Tag;
 use App\Blog;
 use App\Service;
 use Faker\Factory as Faker;
@@ -28,8 +29,14 @@ class BlogSeeder extends Seeder
                 $store->tags = $faker->word;
                 $store->image = 'public/front/assets/img/blog/'.$i.'.'.'jpg';
                 $store->save();
+
+                $tag = new Tag();
+                $tag->name = $store->tags;
+                $tag->slug =strtolower(str_replace(' ', '-',$tag->name));
+                $tag->save();
             }
             
         }
+        
     }
 }

@@ -83,7 +83,7 @@
                             <div class="col-lg-12">
                                 <div class="mb-3">
                                     {{Form::label('description',trans('language.description'), ['class' => 'form-label required'])}}
-                                    {{Form::textarea('description',@$data['edit'] ? @$data['edit']->description : null,['class' => 'form-control' ,'id' => 'textarea', 'placeholder' => trans('language.content'), 'Description'])}}
+                                    {{Form::textarea('description',@$data['edit'] ? @$data['edit']->description : null,['class' => 'form-control' ,'placeholder' => trans('language.content'), 'Description'])}}
                                 </div>
                             </div>
                         </div>
@@ -101,10 +101,5 @@
 
 @endsection
 @push('js')
-<script>
-$(document).ready(function () {
-    CKEDITOR.replace('textarea');
-    CKEDITOR.replace('side');
-});
-</script>
+
 @endpush
