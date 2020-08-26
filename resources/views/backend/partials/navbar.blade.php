@@ -174,28 +174,28 @@
             </ul>
             
           </li>
-           {{-- <li class="nav-item {{ (request()->is('admin/work*')) ? 'active' : '' }} dropdown">
+           <li class="nav-item {{ (request()->is('admin/course*')) ? 'active' : '' }} dropdown">
             <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
               <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>
               </span>
               <span class="nav-link-title">
-                @lang('language.works')
+                @lang('language.courses')
               </span>
             </a>
-            <ul class="dropdown-menu {{ (request()->is('admin/work*')) ? 'show' : '' }}">             
+            <ul class="dropdown-menu {{ (request()->is('admin/course*')) ? 'show' : '' }}">             
               <li >
-                <a class="dropdown-item {{ (request()->is('admin/work/create')) ? 'active' : '' }}" href="{{ url('admin/work/create')}}" >
-                  @lang('language.work') @lang('navbar.create')
+                <a class="dropdown-item {{ (request()->is('admin/course/create')) ? 'active' : '' }}" href="{{ url('admin/course/create')}}" >
+                  @lang('language.course') @lang('navbar.create')
                 </a>
               </li>
               <li >
-                <a class="dropdown-item {{ (request()->is('admin/work')) ? 'active' : '' }}" href="{{ url('admin/work')}}" >
-                  @lang('language.work') @lang('navbar.list')
+                <a class="dropdown-item {{ (request()->is('admin/course')) ? 'active' : '' }}" href="{{ url('admin/course')}}" >
+                  @lang('language.course') @lang('navbar.list')
                 </a>
               </li>
             </ul>
             
-          </li> --}}
+          </li>
            <li class="nav-item {{ (request()->is('admin/portfolio*')) ? 'active' : '' }} dropdown">
             <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
               <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>
@@ -240,7 +240,50 @@
             </ul>
             
           </li>
-          
+           <li class="nav-item {{ (request()->is('admin/testmonial*')) ? 'active' : '' }} dropdown">
+            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
+              <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>
+              </span>
+              <span class="nav-link-title">
+                @lang('language.testmonials')
+              </span>
+            </a>
+            <ul class="dropdown-menu {{ (request()->is('admin/testmonial*')) ? 'show' : '' }}">             
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/testmonial/create')) ? 'active' : '' }}" href="{{ url('admin/testmonial/create')}}" >
+                  @lang('language.testmonial') @lang('navbar.create')
+                </a>
+              </li>
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/testmonial')) ? 'active' : '' }}" href="{{ url('admin/testmonial')}}" >
+                  @lang('language.testmonial') @lang('navbar.list')
+                </a>
+              </li>
+            </ul>
+            
+          </li>
+          <li class="nav-item {{ (request()->is('admin/partner*')) ? 'active' : '' }} dropdown">
+            <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
+              <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>
+              </span>
+              <span class="nav-link-title">
+                Partner's
+              </span>
+            </a>
+            <ul class="dropdown-menu {{ (request()->is('admin/partner*')) ? 'show' : '' }}">             
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/partner/create')) ? 'active' : '' }}" href="{{ url('admin/partner/create')}}" >
+                  Partner @lang('navbar.create')
+                </a>
+              </li>
+              <li >
+                <a class="dropdown-item {{ (request()->is('admin/partner')) ? 'active' : '' }}" href="{{ url('admin/partner')}}" >
+                  Partner @lang('navbar.list')
+                </a>
+              </li>
+            </ul>
+            
+           </li>
           <li class="nav-item {{ (request()->is('admin/contact-info*')) ? 'active' : '' }} dropdown">
             <a class="nav-link dropdown-toggle" href="#navbar-layout" data-toggle="dropdown" role="button" aria-expanded="true">
               <span class="nav-link-icon d-md-none d-lg-inline-block"><svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"></path><rect x="4" y="4" width="6" height="5" rx="2"></rect><rect x="4" y="13" width="6" height="7" rx="2"></rect><rect x="14" y="4" width="6" height="7" rx="2"></rect><rect x="14" y="15" width="6" height="5" rx="2"></rect></svg>

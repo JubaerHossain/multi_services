@@ -28,20 +28,15 @@
             <div class="section-title">
                 <h2>Course Details</h2>
             </div>
-    
-            <form class="search-form">
-                <div class="form-row align-items-center">
-                    <div class="col-lg-12">
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Domain">
-                        <div class="input-group-prepend">
-                            <button type="submit" class="btn btn-primary custom"><i class="fas fa-search"></i></button>
-                        </div>
-                    </div>
-                    </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>{{ $course->title}}</h3>
+                    <hr>
+                    {!! $course->desciption !!}
                 </div>
-                </form>
+
+            </div>
+           
         </div>
     
         <div class="rectangle-shape1"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>

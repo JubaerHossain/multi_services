@@ -89,11 +89,15 @@
                                         <div class="mb-3">
                                             {{Form::label('tag' , trans('language.tag'), ['class' => 'form-label required'])}}
                                             <select name="tags[]" class="form-select tag @error('tags') is-invalid @enderror" multiple="multiple" style="width: 100%" required>
-                                                {{-- @foreach($explode as $item)
-                                                @foreach($explode as $item)
-                                                    <option value="{{$event->id}}"  {{ $item == $event->id ? 'selected="selected"' : ''}}>{{$event->title}}</option>
+                                               
+                                               @if (@$data['edit'])                                                   
+                                                @foreach(explode(',',$data['edit']->tags) as $item)
+                                                @php
+                                                    $tag =DB::table('tags')->where('name',$item)->first();
+                                                @endphp
+                                                    <option value="{{$tag->id}}"  selected="selected">{{$tag->name}}</option>
                                                 @endforeach
-                                                @endforeach --}}
+                                                @endif
 
                                             </select>
                                         </div>                             

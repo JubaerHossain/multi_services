@@ -23,6 +23,11 @@ Route::group(['middleware' => ['admin'],'prefix'=>'admin','namespace' =>'Backend
         Route::resource('plan','PlanController');
         Route::get('plans/delete/{id}', 'PlanController@destroy');
         Route::get('plans', 'PlanController@getData')->name('plan.data');
+        
+        // Partner
+        Route::resource('partner','PartnerController');
+        Route::get('partners/delete/{id}', 'PartnerController@destroy');
+        Route::get('partners', 'PartnerController@getData')->name('partner.data');
         // Pages
         Route::resource('page','PageController');
         Route::get('pages/delete/{id}', 'PageController@destroy');
@@ -31,10 +36,18 @@ Route::group(['middleware' => ['admin'],'prefix'=>'admin','namespace' =>'Backend
         Route::resource('work','WorkController');
         Route::get('works/delete/{id}', 'WorkController@destroy');
         Route::get('works', 'WorkController@getData')->name('work.data');
+        // Testmonial
+        Route::resource('testmonial','TestmonialController');
+        Route::get('testmonials/delete/{id}', 'TestmonialController@destroy');
+        Route::get('testmonials', 'TestmonialController@getData')->name('testmonial.data');
         // portfolio
         Route::resource('portfolio','PortfolioController');
         Route::get('portfolios/delete/{id}', 'PortfolioController@destroy');
         Route::get('portfolios', 'PortfolioController@getData')->name('portfolio.data');
+        // course
+        Route::resource('course','CoursesController');
+        Route::get('courses/delete/{id}', 'CoursesController@destroy');
+        Route::get('courses', 'CoursesController@getData')->name('course.data');
         // team
         Route::resource('team','TeamController');
         Route::get('teams/delete/{id}', 'TeamController@destroy');

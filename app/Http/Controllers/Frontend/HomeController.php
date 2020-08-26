@@ -7,6 +7,7 @@ use App\Blog;
 use App\Menu;
 use App\Team;
 use App\Client;
+use App\Courses;
 use App\Service;
 use App\Products;
 use App\StaticPage;
@@ -19,14 +20,14 @@ use Brian2694\Toastr\Facades\Toastr;
 class HomeController extends Controller
 {
     function index(){
-         $data['blogs'] = Blog::latest()->get()->take(6);
-         $data['clients'] = Client::latest()->get();
-         $data['testmonial'] = Testmonial::latest()->get()->take(15);
+         $data['blogs'] = Blog::where('status',1)->latest()->get()->take(6);
+         $data['clients'] = Client::where('status',1)->latest()->get();
+         $data['testmonial'] = Testmonial::where('status',1)->latest()->get()->take(15);
         return view('frontend.index',compact('data'));
     }
 
     function GetService(){
-        $data =  DB::table('services')->select('title','slug','image')->where('status',1)->OrderBy('id', 'DESC')->get();
+        $data =  DB::table('services')->where('status',1)->select('title','slug','image')->where('status',1)->OrderBy('id', 'DESC')->get();
         return response()->json($data);
     }
     function GetWork(){
@@ -38,8 +39,8 @@ class HomeController extends Controller
         return response()->json($data);
     }
     function GetPortfolio(){
-        $data['services'] =  DB::table('services')->select('title','id')->where('status',1)->OrderBy('id', 'DESC')->get();
-        $data['portfolios'] =  DB::table('portfolios')->select('title','service_id','image')->where('status',1)->OrderBy('id', 'DESC')->get();
+        $data['services'] =  DB::table('services')->where('status',1)->select('title','id')->where('status',1)->OrderBy('id', 'DESC')->get();
+        $data['portfolios'] =  DB::table('portfolios')->where('status',1)->select('title','service_id','image')->where('status',1)->OrderBy('id', 'DESC')->get();
         return response()->json($data);
     }
 
@@ -124,6 +125,7 @@ class HomeController extends Controller
               return view('frontend.pages.page',compact('data'));
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -133,6 +135,7 @@ class HomeController extends Controller
               return view('frontend.pages.page',compact('data'));
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -141,6 +144,7 @@ class HomeController extends Controller
               return view('frontend.pages.domain');
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -149,14 +153,19 @@ class HomeController extends Controller
               return view('frontend.pages.hosting');
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
     function course($slug){
           try {
-              return view('frontend.pages.course');
+              $course = Courses::where('slug',$slug)->first();
+              if ($course) {
+                  return view('frontend.pages.course',compact('course'));
+              }
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -165,6 +174,7 @@ class HomeController extends Controller
               return view('frontend.auth.login');
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -173,6 +183,7 @@ class HomeController extends Controller
               return view('frontend.auth.register');
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }
          
     }
@@ -182,6 +193,7 @@ class HomeController extends Controller
               return view('frontend.pages.service',compact('service'));
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }         
     }
     function service($slug){
@@ -190,6 +202,7 @@ class HomeController extends Controller
               return view('frontend.pages.service_details',compact('service'));
         } catch (\Exception $e) {
             Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
         }         
     }
     function Pages($url){

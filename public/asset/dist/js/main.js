@@ -186,6 +186,7 @@ var url = $("#url").val()
             return $('.startDate').val();
         }
     });
+    
     $('.date').datepicker({
         uiLibrary: 'bootstrap4',
         format: 'yyyy-mm-dd',

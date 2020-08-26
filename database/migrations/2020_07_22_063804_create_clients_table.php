@@ -17,6 +17,7 @@ class CreateClientsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->nullable();
             $table->string('image')->nullable();
+            $table->string('url')->nullable();
             $table->boolean('status')->default(1);
             $table->timestamps();
         });

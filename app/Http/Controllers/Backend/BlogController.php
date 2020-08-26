@@ -25,7 +25,7 @@ class BlogController extends Controller
                     <div class="dropdown">
                         <button class="btn btn-white dropdown-toggle align-text-top" data-boundary="viewport" data-toggle="dropdown">Actions</button>
                         <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="'.route('blog.show',$data->id).'">
+                        <a class="dropdown-item" href="'.route('blog.show',$data->slug).'">
                         View
                         </a>
                         <a class="dropdown-item" href="'.route('blog.edit',$data->id).'">
@@ -127,10 +127,9 @@ class BlogController extends Controller
     }
     public function show($slug)
     {
-       
-        $data['show'] = Products::where('slug',$slug)->first();
+        $data['show'] = Blog::where('slug',$slug)->first();
         if ($data['show']) {
-            return view('backend.product.show_product', compact('data'));
+            return view('backend.blog.show', compact('data'));
             } else {
                 return redirect()->back(); 
             }
@@ -144,6 +143,66 @@ class BlogController extends Controller
             $data['service'] = Service::pluck('title', 'id');
             return view('backend.blog.create', compact('data'));
             } else {
+                return redirect()->back(); 
+            }
+    }
+
+    function update(Request $request,$id){
+        
+        //validate data
+        // return $request;
+        $this->validate($request, array(
+            'title' => 'required|max:70',
+            'content' => 'nullable',
+            'service_id' => 'required|max:70',
+            'tags' =>'required',
+            'summary' => 'required|',
+            'status' => 'required|',
+            'file' => 'nullable|mimes:jpeg,png,jpg',
+
+        ));
+        try { 
+            //store data
+            $taggs=[];
+            $tags = implode(',', $request->tags);
+            foreach($request->tags as $t){                
+                $tt=Tag::where('id',$t)->first();
+                if ($tt) {                    
+                   array_push($taggs,$tt->name);
+                }
+                else {
+                    $tag = new Tag();
+                    $tag->name = $t;
+                    $tag->save();
+                    array_push($taggs,$t);  
+                }
+            }
+            $blog =  Blog::find($id);
+            $blog->title = ucfirst($request->title);
+            $blog->slug = strtolower(str_replace(' ', '-',$blog->title));
+            $blog->tags = implode(',', $taggs);
+            $blog->status = $request->status;
+            $blog->service_id = $request->service_id;
+            $blog->content = $request->content;
+            $blog->summary = $request->summary;           
+            $blog->user_id = Auth::id();
+          
+            //upload image
+            $file = $request->file('file'); 
+            if($request->hasFile('file')){ 
+                $pathImage = 'public/uploads/blog/main';
+                $fileName = imagePost($pathImage,$file);
+                if (file_exists($blog->image)) {
+                    \File::delete($blog->image);
+                }
+                $blog->image =  $fileName;
+            }
+            $blog->save();
+            Toastr::success('Operation Successfull', 'Success');
+            return redirect()->route('blog.index');
+            } catch (\Exception $e) {
+                dd($e);
+                Toastr::error('Something went wrong!', 'Error');
                 return redirect()->back(); 
             }
     }
