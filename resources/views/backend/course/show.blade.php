@@ -38,9 +38,17 @@
                             <h2>{{@$data['show']->title}}</h2>                           
                             <hr>
                             <h3>@lang('language.price')</h3>
-                                 Tk.{{  @$data['show']->price}}
+                            @if ($data['show']->price_type == 1)
+                            Tk.{{  @$data['show']->price}}
+                            @else
+                               Free 
+                            @endif
                             <h3>@lang('language.venue')</h3>
                                  {!!  @$data['show']->venue !!}
+                            <h3>Trainer</h3>
+                                 {{  @$data['show']->trainer->name }}
+                            <h3>Mentor</h3>
+                                 {{  @$data['show']->mentor->name }}
                                  
                             <h3>@lang('language.date')</h3>
                             {{ date('d-M-y', strtotime( @$data['show']->date ))}}
@@ -54,8 +62,6 @@
                             {{  @$data['show']->total_hour }}
                             <h3>@lang('language.seat')</h3>
                             {{  @$data['show']->seat_available }}
-                            <h3>@lang('language.who_can_join')</h3>
-                            {{  @$data['show']->who_can_join }}
                             <h3>@lang('language.class_schedule')</h3>
                             {{  @$data['show']->class_schedule }}
 

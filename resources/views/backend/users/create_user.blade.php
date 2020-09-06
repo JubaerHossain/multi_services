@@ -93,6 +93,22 @@
                                     {{Form::label('date',trans('language.gender'), ['class' => 'form-label required'])}}
                                     {{Form::select('gender', ['Male','Female','Others'], @$data['edit'] ? @$data['edit']->gender: null,  ['class' => 'form-control select'])}}
                                 </div>
+                                
+
+                                <div class="mb-3">
+                                    <label for="file" class="form-label">  @lang('language.attach_file')
+                                        <a href="javascript:;" class="text-reset" data-toggle-icon="help" data-toggle="tooltip" title="@lang('language.icon_help')">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-md" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9" /><line x1="12" y1="17" x2="12" y2="17.01" /><path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg>
+                                        </a>
+                                    </label>
+                                    <div class="form-file">
+                                        <input type="file" class="form-file-input" id="customFile" name="file">
+                                        <label class="form-file-label" for="customFile">
+                                        <span class="form-file-text">@lang('products.choose_file')...</span>
+                                        <span class="form-file-button">@lang('products.browser')</span>
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="mb-3">
                                     <label>{{trans('language.address')}}</label>
                                     <textarea rows="6" class="form-control" name="address">{{ @$data['edit'] ? @$data['edit']->address :null}}</textarea>

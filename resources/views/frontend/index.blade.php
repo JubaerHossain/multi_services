@@ -177,50 +177,52 @@
 <!-- End Why Choose Us Area -->
 
 <!-- Start Resources Area -->
-<section class="resources-area ptb-110">
+<section class="blog-area ptb-110 bg-f1f3f6">
     <div class="container">
         <div class="section-title">
             <h2>Available Courses</h2>
         </div>
-    </div>
-    <div class="resources-slides owl-carousel owl-theme">
-       @foreach (course() as $item)           
-            <div class="single-resources-box">
-                <div class="resources-image">
-                    <a href="{{ route('pages.course',$item->slug)}}"><img src="{{ asset($item->image) }}" alt="image"></a>
-                </div>
-
-                <div class="resources-content update_card">
-                    <h3><a href="{{ route('pages.course',$item->slug)}}">{{ $item->title }}</a></h3>
-                    <p>{{ $item->desciption }}</p>
-
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="course-time">
-                                <div class="date mb-2">
-                                    <i class="far fa-calendar-alt"></i>
-                                    <span class="pl-2">{{ main_date_format($item->created_at) }}</span>
-                                </div>
-                                <div class="hrs mb-2">
-                                    <i class="far fa-clock"></i>
-                                    <span>Total Hours: {{ $item->total_hour }}</span>
-                                </div>
-                                <div class="hrs">
-                                    <i class="far fa-money-bill-alt"></i>
-                                    <span>TK. {{ $item->price }}</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-footer">                        
-                            <a href="{{ route('pages.course',$item->slug)}}" class="btn btn-primary w-100"><i class="fa fa-eye"></i> Enroll Now</a>
-                        </div>
+    <div class="row">
+       @foreach (course() as $item)    
+        <div class="col-lg-4 col-md-6">       
+                <div class="single-resources-box">
+                    <div class="resources-image">
+                        <a href="{{ route('pages.course',$item->slug)}}"><img src="{{ asset($item->image) }}" alt="image"></a>
                     </div>
 
-                </div>
-            </div>
-       @endforeach
+                    <div class="resources-content update_card">
+                        <h3><a href="{{ route('pages.course',$item->slug)}}">{{ $item->title }}</a></h3>
+                     <p>{{Str::limit($item->desciption, 200, ' ...') }}</p>
 
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="course-time">
+                                    <div class="date mb-2">
+                                        <i class="far fa-calendar-alt"></i>
+                                        <span class="pl-2">{{ main_date_format($item->created_at) }}</span>
+                                    </div>
+                                    <div class="hrs mb-2">
+                                        <i class="far fa-clock"></i>
+                                        <span>Total Hours: {{ $item->total_hour }}</span>
+                                    </div>
+                                    <div class="hrs">
+                                        <i class="far fa-money-bill-alt"></i>
+                                        <span>TK. {{ $item->price }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer">                        
+                                <a href="{{ route('pages.course',$item->slug)}}" class="btn btn-primary w-100"><i class="fa fa-eye"></i> Enroll Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+       @endforeach
     </div>
+</div>
+
 </section>
 <!-- End Resources Area -->
  {{-- start portfolio --}}
@@ -235,7 +237,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog-post">
                         <div class="entry-thumbnail">
-                            <a href="#"><img src="{{ asset($item->image) }}" alt="image"></a>
+                           <a href="{{ @$item->url }}" target="_blank"><img src="{{ asset($item->image) }}" alt="image"></a>
                         </div>
                     </div>
                 </div>

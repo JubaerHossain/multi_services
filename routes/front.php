@@ -12,6 +12,7 @@ Route::group(['namespace' =>'Frontend'],function(){
     Route::get('/', 'HomeController@index')->name('front');
     Route::get('domain', 'HomeController@domain')->name('front.domain');
     Route::get('hosting', 'HomeController@hosting')->name('front.hosting');
+    Route::get('course', 'HomeController@allCourse');
     Route::get('product', 'HomeController@shop_index')->name('front.shop_index');
     Route::get('product-details/{slug}', 'HomeController@single_shop')->name('front.single_shop');
     Route::get('product/{slug}', 'HomeController@product_service')->name('front.product_service');
@@ -37,14 +38,9 @@ Route::group(['namespace' =>'Frontend'],function(){
     Route::get('ajax/home-blog', 'HomeController@GetBlog');
     Route::get('ajax/home-product', 'HomeController@AjaxProduct');
 
-    //free sample
-    Route::post('product/free/sample', 'OrderController@product_get_sample')->name('front.product_get_sample');
     //Cart
-    Route::post('product/cart/addtocart', 'OrderController@AddToCart')->name('cart.addToCart');
-    Route::get('cart/', 'OrderController@Cart')->name('front.cart');
-    Route::get('product-cart/delete/{row}', 'OrderController@CartDelete');
-    Route::get('product-cart/information', 'OrderController@CartInformation')->name('cart.information');
-    Route::post('v2/product-cart/information', 'OrderController@CartInformationAdd')->name('cart.information_add');
+    Route::get('cart/{slug}', 'OrderController@Cart')->name('front.cart');
+    Route::post('v2/product-cart/information/{id}', 'OrderController@CartInformationAdd')->name('cart.information_add');
     //
     Route::post('user/v2/login','UserController@login')->name('front.login');
     Route::get('user/v2/logout','UserController@user_logout')->name('front.logout');

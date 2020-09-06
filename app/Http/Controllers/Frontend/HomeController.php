@@ -169,6 +169,16 @@ class HomeController extends Controller
         }
          
     }
+    function allCourse(){
+          try {
+               $course = Courses::where('status',1)->orderBy('id','asc')->paginate(3);
+               return view('frontend.pages.course_all',compact('course'));
+        } catch (\Exception $e) {
+            Toastr::error('Something went wrong!', 'Error');
+            return redirect()->back();
+        }
+         
+    }
     function login(){
           try {
               return view('frontend.auth.login');

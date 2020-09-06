@@ -61,18 +61,26 @@ class CreateMenusTable extends Migration
                 'url' =>  'about-us',
                 'created_at' => Carbon::now()
             ],
-            [
-                'name' => 'Contact',
-                'position' => 6,
-                'type' => 1,
-                'url' =>  'contact-us',
-                'created_at' => Carbon::now()
-            ],
+            
             [
                 'name' => 'Hosting',
                 'position' => 6,
                 'type' => 1,
                 'url' =>  'hosting',
+                'created_at' => Carbon::now()
+            ],
+            [
+                'name' => 'Contact',
+                'position' => 8,
+                'type' => 1,
+                'url' =>  'contact-us',
+                'created_at' => Carbon::now()
+            ],
+            [
+                'name' => 'Course',
+                'position' => 7,
+                'type' => 1,
+                'url' =>  'course',
                 'created_at' => Carbon::now()
             ],
         ]);

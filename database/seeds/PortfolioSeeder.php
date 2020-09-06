@@ -21,6 +21,7 @@ class PortfolioSeeder extends Seeder
                 $data = new Portfolio();
                 $data->title = $faker->city;
                 $data->service_id = $value->id;
+                $data->url = url('/');
                 $data->image = 'public/front/assets/img/portfolio/pf ('.$i.').jpg';
                 $data->save();
             }

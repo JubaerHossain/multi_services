@@ -77,7 +77,8 @@ class UsersController extends Controller
             'name' => 'required|max:50',
             'email' => 'required|max:100|unique:users',
             'password' => 'required|max:100',
-            'phone' => 'required|max:100'
+            'phone' => 'required|max:100',
+            'file' => 'nullabe|mimes:jpeg,png,jpg',
         ));
         DB::beginTransaction();
         try{
@@ -90,6 +91,15 @@ class UsersController extends Controller
         $user->company = $request->company;
         $user->gender = $request->gender;
         $user->address = $request->address;
+        $file = $request->file('file'); 
+        if($request->hasFile('file')){ 
+            $pathImage = 'public/uploads/profile';
+            $fileName = imagePost($pathImage,$file);
+            $data->avatar =  $fileName;
+        }
+        else {
+            $data->avatar =  'public/uploads/profile/default.jpg';
+        }
         $user->save();
         $role = Role::find($request->role);
         $user->assignRole($role);

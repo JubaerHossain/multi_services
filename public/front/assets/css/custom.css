@@ -194,6 +194,7 @@ Pricing Area CSS
 
   .update_card{
       padding: 0px !important;
+      background: #fff;
   }
   .update_card h3{
       padding: 25px 22px 5px 25px;
@@ -269,4 +270,42 @@ input#inlineFormInputGroup {
   color: red;
   float: left !important;
   margin-bottom: 5px;
+}
+.content.course_custom{
+  border: 1px solid;
+  padding-top: 20px;
+  background: #0d1d3b;
+}
+.course_custom li{
+  list-style: none;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+.course_custom span{
+  font-size: 14px;
+}
+.course_custom span strong{
+  font-size: 16px;
+}
+.course_custom p{
+  font-size: 20px;
+}
+.custom-card-body{
+  background: #0d1d3b;
+}
+.custom-card-body p{
+  color: #fff;
+}
+.card-body p{
+  text-align: center;
+}
+.text-head h3{
+  position: absolute;
+}
+.text-head a{
+  float: right;
+}
+.invalid-feedback {
+  display: block;
 }

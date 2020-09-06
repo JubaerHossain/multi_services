@@ -9,7 +9,7 @@
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
          <span class="navbar-toggler-icon"></span>
        </button>
-       <a href="." class="navbar-brand navbar-brand-autodark">
+       <a target="_blank" href="{{ url('/')}}" class="navbar-brand navbar-brand-autodark">
          <img src="{{ asset(get_setting()->logo) }}" alt="Tabler" class="navbar-brand-image">
        </a>
        <div class="navbar-nav flex-row d-lg-none">

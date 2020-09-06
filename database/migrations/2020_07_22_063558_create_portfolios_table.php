@@ -17,6 +17,7 @@ class CreatePortfoliosTable extends Migration
             $table->bigIncrements('id');
             $table->string('title')->nullable();
             $table->string('image')->nullable();
+            $table->string('url')->nullable();
             $table->boolean('status')->default(1);
             $table->timestamps();
             $table->Integer('service_id')->unsigned();

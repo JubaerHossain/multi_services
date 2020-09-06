@@ -20,6 +20,8 @@ class PermissionSeeder extends Seeder
 
         $role1 = Role::create(['name' => 'User']);
         $role2 = Role::create(['name' => 'Admin']);
+        $role4 = Role::create(['name' => 'Trainer']);
+        $role5 = Role::create(['name' => 'Mentor']);
         $role3 = Role::create(['name' => 'Super Admin']);
 
         // create permissions
@@ -42,5 +44,7 @@ class PermissionSeeder extends Seeder
                 'token' => ''
             ]);
         $user->assignRole($role3);
+
+        
     }
 }

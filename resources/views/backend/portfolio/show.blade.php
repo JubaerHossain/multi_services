@@ -40,6 +40,9 @@
                             <h3>Service</h3>
                                  {{  @$data['show']->service->title}}
                             <hr>
+                            <h3>URL</h3>
+                                 {{  @$data['show']->url}}
+                            <hr>
                             <h3>Status</h3>
                              @if (@$data['show']->status == 1)
                                  Active

@@ -1,28 +1,26 @@
-@extends('frontend.layout.master')
+@extends('frontend.layouts.app')
 @section('title','Shop Cart')
 @push('css')
 @endpush
 @section('content')
     
-
-<section id="subheader" data-speed="8" data-type="background">
+<div class="page-title-area">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Cart Details</h1>
-                <ul class="crumb">
-                    <li><a href="{{ url('/')}}">Home</a></li>
-                    <li class="sep">/</li>
-                    <li>Cart Details</li>
-                    @if (@$data['service'])                                    
-                        <li class="sep">/</li>
-                        <li>{{@$data['service']}}</li>
-                    @endif
-                </ul>
-            </div>
+        <div class="page-title-content">
+            <ul>
+                <li><a href="{{ url('/') }}">Home</a></li>
+                <li>Cart</li>
+            </ul>
         </div>
     </div>
-</section>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+</div>
 
 <div id="content mt-5 mb-5">
     <div class="container bg-white mt-5 mb-5">

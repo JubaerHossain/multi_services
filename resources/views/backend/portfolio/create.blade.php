@@ -59,6 +59,11 @@
 
                                 </div> 
                                 <div class="mb-3">
+                                    {{Form::label('url','URL', ['class' => 'form-label required'])}}
+                                    {{Form::text('url',@$data['edit'] ? @$data['edit']->url :null, ['class' => 'form-control'])}}
+
+                                </div> 
+                                <div class="mb-3">
                                     {{Form::label('service' , trans('products.service'), ['class' => 'form-label required'])}}
                                     {{Form::select('service_id', $data['service'], @$data['edit'] ? @$data['edit']->service_id: null,  ['class' => 'form-control select'])}}
                                 </div>

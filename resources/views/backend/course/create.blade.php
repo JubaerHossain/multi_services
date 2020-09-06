@@ -58,33 +58,36 @@
                                         <div class="mb-3">
                                             {{Form::label('title' , trans('language.title'), ['class' => 'form-label required'])}}
                                             {{Form::text('title',@$data['edit'] ?@$data['edit']->title : null,['class' => 'form-control', 'placeholder' => trans('language.name')])}}
-                                        </div>
-                                        <div class="mb-3">
-                                            {{Form::label('price',trans('language.price'), ['class'=> 'form-label required'])}}
-                                            {{Form::text('price', @$data['edit'] ? @$data['edit']->price :null, ['class' => 'form-control', 'placeholder' => trans('language.price')])}}
-                                        </div>  
+                                        </div>                                       
+
                                         <div class="mb-3">
                                             {{Form::label('venue',trans('language.venue'), ['class'=> 'form-label required'])}}
                                             {{Form::text('venue', @$data['edit'] ? @$data['edit']->venue :null, ['class' => 'form-control', 'placeholder' => trans('language.venue')])}}
+                                        </div> 
+                                        <div class="mb-3">
+                                            {{Form::label('status','Trainer', ['class' => 'form-label required'])}}
+                                            {{Form::select('trainer_id', $data['trainer'], @$data['edit'] ? @$data['edit']->trainer_id: null,  ['class' => 'form-control select'])}}
                                         </div>  
                                         <div class="mb-3">
-                                            {{Form::label('date',trans('language.date'), ['class'=> 'form-label required'])}}
+                                            {{Form::label('status','Mentor', ['class' => 'form-label required'])}}
+                                            {{Form::select('mentor_id', $data['trainer'], @$data['edit'] ? @$data['edit']->mentor_id: null,  ['class' => 'form-control select'])}}
+                                        </div> 
+                                        <div class="mb-3">
+                                            {{Form::label('dates',trans('language.date'), ['class'=> 'form-label required'])}}
                                             {{Form::text('date',  @$data['edit'] ? @$data['edit']->date : \Carbon\Carbon::now()->format("Y-m-d"), ['class' => 'datepicker form-control startDate' ])}}  
                                         </div>  
                                         <div class="mb-3">
-                                            {{Form::label('last_date',trans('language.last_date'), ['class'=> 'form-label required'])}}
+                                            {{Form::label('last_dates',trans('language.last_date'), ['class'=> 'form-label required'])}}
                                             {{Form::text('last_date', @$data['edit'] ? @$data['edit']->last_date : \Carbon\Carbon::now()->format("Y-m-d"),  ['class' => 'datepicker form-control endDate'])}}
                                         </div>  
                                         <div class="mb-3">
-                                            {{Form::label('class_start',trans('language.class_start'), ['class'=> 'form-label required'])}}
+                                            {{Form::label('class_starts',trans('language.class_start'), ['class'=> 'form-label required'])}}
                                             {{Form::text('class_start', @$data['edit'] ? @$data['edit']->class_start : \Carbon\Carbon::now()->format("Y-m-d"), ['class' => 'datepicker form-control date'])}}
                                         </div> 
                                         <div class="mb-3">
-                                            {{Form::label('status','Status', ['class' => 'form-label required'])}}
-                                            {{Form::select('status', [1 => 'Active',0 => 'Deactive'], @$data['edit'] ? @$data['edit']->status: null,  ['class' => 'form-control select'])}}
-        
-                                        </div>  
-                                       
+                                            {{Form::label('description',trans('language.summary'), ['class' => 'form-label required'])}}
+                                            {{Form::textarea('desciption',@$data['edit'] ? @$data['edit']->desciption : null,['class' => 'form-control' , 'placeholder' => trans('language.description'), 'Description'])}}
+                                        </div>                                       
                                                                         
                                     </div>
                                 </div>
@@ -92,10 +95,34 @@
                             <div class="col-xl-6">
                                 <div class="row">
                                     <div class="col-md-6 col-xl-12"> 
+
+                                        <div class="mb-3">
+                                            <div class="form-label">{{trans('language.price')}}</div>
+                                            <div>
+                                              <label class="form-check form-check-inline">
+                                                <input class="form-check-input" name="price_type" type="radio" {{ @$data['edit'] ?  @$data['edit']->price_type ==  1 ? 'checked' : '' :'checked' }}  value="1">
+                                                <span class="form-check-label">Paid</span>
+                                              </label>
+                                              <label class="form-check form-check-inline">
+                                                <input name="price_type" class="form-check-input" {{ @$data['edit'] ? @$data['edit']->price_type ==  1 ? '' : 'checked' : '' }} value="0" type="radio">
+                                                <span class="form-check-label">Free</span>
+                                              </label>
+                                            </div>
+                                          </div>
+                                        <input type="text" hidden id="price_type" value="{{ @$data['edit'] ? @$data['edit']->price_type ==  1 ? 1 : 0 : 1 }}">
+                                        <div class="mb-3">
+                                            {{Form::text('price', @$data['edit'] ? @$data['edit']->price :null, ['class' => 'form-control custom_price', 'placeholder' => trans('language.price')])}}
+                                        </div> 
                                                                           
                                         <div class="mb-3">
                                             {{Form::label('no_of_class',trans('language.total_class'), ['class'=> 'form-label required'])}}
                                             {{Form::text('no_of_class', @$data['edit'] ? @$data['edit']->no_of_class :null, ['class' => 'form-control', 'placeholder' => trans('language.total_class')])}}
+                                        </div> 
+                                          
+                                        <div class="mb-3">
+                                            {{Form::label('status','Status', ['class' => 'form-label required'])}}
+                                            {{Form::select('status', [1 => 'Active',0 => 'Deactive'], @$data['edit'] ? @$data['edit']->status: null,  ['class' => 'form-control select'])}}
+        
                                         </div>                                    
                                         <div class="mb-3">
                                             {{Form::label('total_hour',trans('language.total_hours'), ['class' => 'form-label required'])}}
@@ -105,10 +132,10 @@
                                             {{Form::label('seat',trans('language.seat'), ['class' => 'form-label required'])}}
                                             {{Form::text('seat_available', @$data['edit'] ? @$data['edit']->seat_available :null, ['class' => 'form-control', 'placeholder' =>  trans('language.seat')])}}
                                         </div>                                    
-                                        <div class="mb-3">
+                                        {{-- <div class="mb-3">
                                             {{Form::label('who_can_join',trans('language.who_can_join'), ['class' => 'form-label required'])}}
                                             {{Form::text('who_can_join', @$data['edit'] ? @$data['edit']->who_can_join :null, ['class' => 'form-control', 'placeholder' =>  trans('language.who_can_join')])}}
-                                        </div>                                    
+                                        </div>                                     --}}
                                         <div class="mb-3">
                                             {{Form::label('class_schedule',trans('language.class_schedule'), ['class' => 'form-label required'])}}
                                             {{Form::text('class_schedule', @$data['edit'] ? @$data['edit']->class_schedule :null, ['class' => 'form-control', 'placeholder' =>  trans('language.class_schedule')])}}
@@ -141,14 +168,12 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 col-md-12 col-sm-12">
+                                
                                 <div class="mb-3">
                                     {{Form::label('outline',trans('language.outline'), ['class' => 'form-label required'])}}
-                                    {{Form::textarea('outline',@$data['edit'] ? @$data['edit']->outline : null,['class' => 'form-control',  'placeholder' => trans('language.outline'), 'summary'])}}
+                                    {{Form::textarea('outline',@$data['edit'] ? @$data['edit']->outline : null,['class' => 'form-control','id' => 'textarea',  'placeholder' => trans('language.outline'), 'summary'])}}
                                 </div>
-                                <div class="mb-3">
-                                    {{Form::label('description',trans('language.description'), ['class' => 'form-label required'])}}
-                                    {{Form::textarea('desciption',@$data['edit'] ? @$data['edit']->desciption : null,['class' => 'form-control' ,'id' => 'textarea', 'placeholder' => trans('language.description'), 'Description'])}}
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -168,6 +193,19 @@
 <script>
 $(document).ready(function () {
     CKEDITOR.replace('textarea');
+});
+
+ if ($('#price_type').val() == 0) {
+        $(".custom_price").hide();
+    } else {
+        $(".custom_price").show();
+    }
+$( ".form-check" ).on( "click", function() {
+    if ($("input:checked" ).val() == 0) {
+        $(".custom_price").hide();
+    } else {
+        $(".custom_price").show();
+    }
 });
 </script>
 @endpush

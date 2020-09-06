@@ -67,15 +67,18 @@ class PortfolioController extends Controller
  
     public function store(Request $request)
     {
+        // return $request;
         $this->validate($request, [
             'title' => 'required|max:250',
             'status' => 'required|',
+            'url' => 'required|',
             'service_id' => 'required|',
             'document' => 'required|mimes:jpeg,png,jpg',
         ]);
         try {
             $data = new Portfolio();
             $data->title = $request->title;
+            $data->url = $request->url;
             $data->status = $request->status;
             $data->service_id = $request->service_id;
             $file = $request->file('document'); 
@@ -89,7 +92,6 @@ class PortfolioController extends Controller
             return redirect('/admin/portfolio');
     
          } catch (\Exception $e) {
-             dd($e);
              Toastr::error('Something went wrong!', 'Error');
              return redirect()->back(); 
          }
@@ -142,12 +144,14 @@ class PortfolioController extends Controller
         $this->validate($request, [
             'title' => 'required|',
             'service_id' => 'required|',
+            'status' => 'url|',
             'status' => 'required|',
             'document' => 'nullable|mimes:jpeg,png,jpg',
         ]);
         try {
             $data = Portfolio::find($id);
             $data->title = $request->title;
+            $data->url = $request->url;
             $data->status = $request->status;
             $data->service_id = $request->service_id;
             $file = $request->file('document'); 

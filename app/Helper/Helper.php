@@ -67,7 +67,7 @@ function service(){
     return DB::table('services')->where('status',1)->orderBy('id','asc')->get()->take(6);
 }
 function course(){
-         return DB::table('courses')->where('status',1)->orderBy('id','asc')->get();
+         return DB::table('courses')->where('status',1)->orderBy('id','asc')->get()->take(3);
 }
 function Choose(){
          return DB::table('choose_us')->where('status',1)->orderBy('id','asc')->get();
