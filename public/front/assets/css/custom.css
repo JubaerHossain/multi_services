@@ -309,3 +309,177 @@ input#inlineFormInputGroup {
 .invalid-feedback {
   display: block;
 }
+.domain_search .forms-main {
+  background: #0d1d3b;
+  padding: 50px 0;
+}
+#response {
+  margin-top: 20px;
+  display: none;
+  margin: 0;
+}
+#continue {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 100%;
+  display: none;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.domain_search .grid-column-2 {
+  grid-template-columns: 0.5fr 1fr;
+}
+.domain_search .grid {
+  display: grid;
+}
+
+.domain_search .column {
+    border: none;
+    padding: 0px;
+    padding-right: 10em;
+}
+.domain_search .forms-main h3 {
+  font-size: 30px;
+  line-height: 35px;
+  color: #fff;
+}
+.domain_search .search_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.domain_search .forms-main p {
+  font-size: 17px;
+  line-height: 25px;
+  color: #F2F2F2;
+  margin-top: 6px;
+  font-weight: bold;
+}
+.domain_search .forms-main p sub {
+  margin-right: 25px;
+  margin-left: 3px;
+  font-weight: normal;
+}
+input, select {
+  vertical-align: middle;
+}
+
+
+#searchBar, #ext {
+    display: block;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em;
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #999;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .2em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+    background-repeat: repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+    float: left;
+}
+input[type=text], input[type=password], input[type=email], textarea, input[type=file] {
+    display: inline-block;
+    float: left;
+    padding: 10px 15px;
+    border: 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+}
+.domain_search span.input-group-btn {
+  width: 15%;
+  background: #fff;
+}
+#ext, #transfer_ext {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+
+.forms-main #Transfer {
+    background: #f0ad4e;
+}
+.search_form button {
+    text-align: center;
+    width: 143px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+#btnSearch {
+    background: #5cb85c;
+}
+#btnSearch, #btnTransfer {
+    padding: 10px 20px;
+}
+#btnSearch {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.search_form button {
+    text-align: center;
+    width: 143px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+}
+#checking {
+  max-width: 45px;
+  display: none;
+}
+@media only screen and (min-width: 992px){
+  .forms-main #btnSearch {
+    width: 20%;
+}
+}
+@media only screen and (min-width: 992px){
+  .forms-main #Transfer {
+    width: 15%;
+}
+}
+@media only screen and (min-width: 992px){
+  .forms-main #searchBar {
+    width: 50%;
+}
+}
+@media (max-width: 1440px){
+  .domain_search .column {
+      padding-right: 3em;
+  }
+  }
+
+
+

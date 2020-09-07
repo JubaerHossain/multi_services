@@ -71,32 +71,54 @@
 <!-- End Services Area -->
 
 <!-- Start Features Area -->
-<section class="features-area ptb-110 bg-f1f3f6">
-    <div class="container">
-        <div class="section-title">
-            <h2>Find Domain </h2>
-        </div>
+<section class="domain_search">
+    <div class="forms-main">
+         <div class="container">
 
-        <form class="search-form">
-            <div class="form-row align-items-center">
-                <div class="col-lg-12">
-                <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Domain">
-                    <div class="input-group-prepend">
-                        <button type="submit" class="btn btn-primary custom"><i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </form>
-    </div>
+              <div id="response"></div>
+             <div id="continue"> <div class="btn-group"><a href="http://localhost/hostingbilling-14/codecanyon-26531743-hosting-billing-domain-and-hosting-invoicing-system/hosting_billing_v1.4/hostingbilling-new-installation/cart/hosting_packages" class="btn btn-warning">Add Hosting</a><a href="http://localhost/hostingbilling-14/codecanyon-26531743-hosting-billing-domain-and-hosting-invoicing-system/hosting_billing_v1.4/hostingbilling-new-installation/cart/domain_only" class="btn btn-info">Order domain name only</a></div> </div>
+     
+             <div class="grid grid-column-2">
+                  <div class="column">
+                      <h3>Search for a domain name</h3>							
+                  </div>	 
+                  <div class="column">
+                      <form action="#" class="search_form" method="post" id="search_form" _lpchecked="1">
+                          <input name="domain" type="hidden" id="domain">
+                          <input name="price" type="hidden" id="price">
+                          <input name="type" type="hidden" id="type">
+      
+                          <input id="searchBar" type="email" name="email" placeholder="Enter your domain name...">
+                          <span class="input-group-btn">
 
-    <div class="rectangle-shape1"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>
-    <div class="rectangle-shape2"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape2.png" alt="image"></div>
-    <div class="shape1"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-    <div class="shape2"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-    <div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+                          <select class="btn btn-default" name="ext" id="ext">
+                                                          <option value="info">.info</option>                       
+                                                          <option value="in">.in</option>                       
+                                                          <option value="com">.com</option>                       
+                                                          <option value="vip">.vip</option>                       
+                                                          <option value="net">.net</option>                       
+                                                          <option value="mobi">.mobi</option>                       
+                              
+                          </select>
+
+                          </span>
+                          <button type="button" id="Transfer">Transfer</button>
+                          <button type="button" id="btnSearch">Domain</button>
+                          <img id="checking" src="http://localhost/hostingbilling-14/codecanyon-26531743-hosting-billing-domain-and-hosting-invoicing-system/hosting_billing_v1.4/hostingbilling-new-installation/resource/images/checking.gif">
+          
+                      </form>
+                      <p>
+                                                  .info<sub>$8.00</sub>                      
+                                                  .in<sub>$8.00</sub>                      
+                                                  .com<sub>$18.00</sub>                      
+                                                  .vip<sub>$12.00</sub>                      
+                                                  .net<sub>$19.00</sub>                      
+                                                  </p>
+                  </div>
+              </div>
+         </div>
+  
+     </div>
 </section>
 <!-- End Features Area -->
 

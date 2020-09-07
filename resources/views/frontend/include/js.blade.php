@@ -38,5 +38,7 @@
 <script src="{{ asset('public/front/') }}/assets/js/main.js"></script>
 <script src="{{ asset('public/front/') }}/assets/js/custom.js"></script>
 @stack('js')
+<div class="fb-customerchat" page_id="439619546608481"></div>
+
 </body>
 </html>
