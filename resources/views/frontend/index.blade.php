@@ -24,10 +24,10 @@
         </div>
     </div>
 
-    <div class="banner-shape"><img src="{{ asset('public/front/') }}/assets/img/banner-shape.png" alt="image"></div>
-    <div class="banner-white-shape"><img src="{{ asset('public/front/') }}/assets/img/white-shape.png" alt="image"></div>
-    <div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-    <div class="shape2"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+    <div class="banner-shape"><img src="{{ asset('/front/') }}/assets/img/banner-shape.png" alt="image"></div>
+    <div class="banner-white-shape"><img src="{{ asset('/front/') }}/assets/img/white-shape.png" alt="image"></div>
+    <div class="shape3"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+    <div class="shape2"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
 
     <div class="lines">
         <div class="line"></div>
@@ -62,11 +62,11 @@
         </div>
     </div>
 
-    <div class="rectangle-shape1"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>
-    <div class="rectangle-shape2"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape2.png" alt="image"></div>
-    <div class="shape1"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-    <div class="shape2"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-    <div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+    <div class="rectangle-shape1"><img src="{{ asset('/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>
+    <div class="rectangle-shape2"><img src="{{ asset('/front/') }}/assets/img/rectangle-shape2.png" alt="image"></div>
+    <div class="shape1"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+    <div class="shape2"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+    <div class="shape3"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
 </section>
 <!-- End Services Area -->
 
@@ -163,7 +163,7 @@
             
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <div class="section-title">
-                    <h2 class="text-center">Why Choose X-teamit?</h2>
+                    <h2 class="text-center">Why Choose Honest Traders?</h2>
                 </div>
             </div>
         </div>

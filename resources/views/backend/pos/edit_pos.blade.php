@@ -250,7 +250,7 @@
 
 @endsection
 @push('js')
-<script src="{{asset('public/asset/dist/js/edit_pos.js')}}"></script>
+<script src="{{asset('/asset/dist/js/edit_pos.js')}}"></script>
 <script type="text/javascript">
 
 </script>

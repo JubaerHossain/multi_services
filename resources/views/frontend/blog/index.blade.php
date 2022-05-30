@@ -20,7 +20,7 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-<div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+<div class="shape3"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
 </div>
 
 <section class="blog-area ptb-110">
@@ -95,5 +95,5 @@
 @endsection
 
 @push('js')  
-<script src="{{ asset('public/front/assets/js/blog.js') }}"></script>  
+<script src="{{ asset('/front/assets/js/blog.js') }}"></script>  
 @endpush

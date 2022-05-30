@@ -59,34 +59,34 @@
     
     <!-- Javascript Files
     ================================================== -->
-    <script src="{{ asset('public/frontend/') }}/js/jquery.min.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/jpreLoader.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/bootstrap.min.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/jquery.isotope.min.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/easing.js"></script>
-    {{-- <script src="{{ asset('public/frontend/') }}/js/jquery.flexslider-min.js"></script> --}}
-    <script src="{{ asset('public/frontend/') }}/js/jquery.scrollto.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/owl.carousel.js"></script>
-    {{-- <script src="{{ asset('public/frontend/') }}/js/jquery.countTo.js"></script> --}}
-    <script src="{{ asset('public/frontend/') }}/js/classie.js"></script>
-    {{-- <script src="{{ asset('public/frontend/') }}/js/video.resize.js"></script> --}}
-    {{-- <script src="{{ asset('public/frontend/') }}/js/validation.js"></script> --}}
-    <script src="{{ asset('public/frontend/') }}/js/wow.min.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/jquery.magnific-popup.min.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/jquery.stellar.min.js"></script>
-	<script src="{{ asset('public/frontend/') }}/js/enquire.min.js"></script>	
-    {{-- <script src="{{ asset('public/frontend/') }}/js/jquery.plugin.js"></script> --}}
-	{{-- <script src="{{ asset('public/frontend/') }}/js/jquery.countdown.js"></script>	 --}}
-    {{-- <script src="{{ asset('public/frontend/') }}/js/countdown-custom.js"></script> --}}
-    <script src="{{ asset('public/frontend/') }}/js/designesia.js"></script>	
-	<script src="{{ asset('public/frontend/') }}/js/jquery.event.move.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/jquery.twentytwenty.js"></script>	
-    <script src="{{asset('public/asset/')}}/dist/js/validate.js"></script>
-    <script src="{{ asset('public/frontend/') }}/js/custom.js"></script>    
-    <script src="{{asset('public/js/sweet-alert.js')}}"></script>
+    <script src="{{ asset('/frontend/') }}/js/jquery.min.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/jpreLoader.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/jquery.isotope.min.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/easing.js"></script>
+    {{-- <script src="{{ asset('/frontend/') }}/js/jquery.flexslider-min.js"></script> --}}
+    <script src="{{ asset('/frontend/') }}/js/jquery.scrollto.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/owl.carousel.js"></script>
+    {{-- <script src="{{ asset('/frontend/') }}/js/jquery.countTo.js"></script> --}}
+    <script src="{{ asset('/frontend/') }}/js/classie.js"></script>
+    {{-- <script src="{{ asset('/frontend/') }}/js/video.resize.js"></script> --}}
+    {{-- <script src="{{ asset('/frontend/') }}/js/validation.js"></script> --}}
+    <script src="{{ asset('/frontend/') }}/js/wow.min.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/jquery.stellar.min.js"></script>
+	<script src="{{ asset('/frontend/') }}/js/enquire.min.js"></script>	
+    {{-- <script src="{{ asset('/frontend/') }}/js/jquery.plugin.js"></script> --}}
+	{{-- <script src="{{ asset('/frontend/') }}/js/jquery.countdown.js"></script>	 --}}
+    {{-- <script src="{{ asset('/frontend/') }}/js/countdown-custom.js"></script> --}}
+    <script src="{{ asset('/frontend/') }}/js/designesia.js"></script>	
+	<script src="{{ asset('/frontend/') }}/js/jquery.event.move.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/jquery.twentytwenty.js"></script>	
+    <script src="{{asset('/asset/')}}/dist/js/validate.js"></script>
+    <script src="{{ asset('/frontend/') }}/js/custom.js"></script>    
+    <script src="{{asset('/js/sweet-alert.js')}}"></script>
 
     @stack('js')
-    <script src="{{asset('public/js/toastr.js')}}"></script>
+    <script src="{{asset('/js/toastr.js')}}"></script>
     {!! Toastr::message() !!}
      <script>
              function addToCart(){

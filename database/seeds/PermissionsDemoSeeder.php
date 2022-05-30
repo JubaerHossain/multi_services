@@ -38,7 +38,7 @@ class PermissionSeeder extends Seeder
                 'name' => 'Admin',
                 'first_name' => 'John',
                 'last_name' => "Due",
-                'email' => 'xteamitbd@gmail.com',
+                'email' => 'sookh@gmail.com',
                 'password' => Hash::make(12345678),
                 'avatar' =>'public/uploads/profile/default.jpg',
                 'token' => ''

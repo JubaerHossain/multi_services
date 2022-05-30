@@ -4,7 +4,7 @@
 @endpush
 @section('content')
 <div class="text-center mb-4">
-    <img src="{{ asset('public/asset/')}}/static/logo.svg" height="36" alt="">
+    <img src="{{ asset('/asset/')}}/static/logo.svg" height="36" alt="">
   </div>
   <form class="card card-md" action="{{ route('register') }}" method="post">
       @csrf

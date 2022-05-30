@@ -23,11 +23,11 @@
     <meta name="HandheldFriendly" content="True"/>
     <meta name="MobileOptimized" content="320"/>
     <meta name="robots" content="noindex,nofollow,noarchive"/>
-  <link rel="icon" href="{{ asset('public/asset/')}}/favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="{{ asset('/asset/')}}/favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
     <!-- CSS files -->
-    <link href="{{ asset('public/asset/')}}/dist/css/tabler.min.css" rel="stylesheet"/>
-    <link href="{{ asset('public/asset/')}}/dist/css/demo.min.css" rel="stylesheet"/>
+    <link href="{{ asset('/asset/')}}/dist/css/tabler.min.css" rel="stylesheet"/>
+    <link href="{{ asset('/asset/')}}/dist/css/demo.min.css" rel="stylesheet"/>
     @stack('css')
     <style>
       body {
@@ -46,9 +46,9 @@
       </div>
     </div>
     <!-- Libs JS -->
-    <script src="{{ asset('public/asset/')}}/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('/asset/')}}/dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Tabler Core -->
-    <script src="{{ asset('public/asset/')}}/dist/js/tabler.min.js"></script>
+    <script src="{{ asset('/asset/')}}/dist/js/tabler.min.js"></script>
     <script>
       document.body.style.display = "block"
     </script>

@@ -21,7 +21,7 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-<div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+<div class="shape3"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
 </div>
 <div id="content" class="no-top">
     <section class="features-area ptb-110 bg-f1f3f6">
@@ -85,11 +85,11 @@
            
         </div>
     
-        <div class="rectangle-shape1"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>
-        <div class="rectangle-shape2"><img src="{{ asset('public/front/') }}/assets/img/rectangle-shape2.png" alt="image"></div>
-        <div class="shape1"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-        <div class="shape2"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
-        <div class="shape3"><img src="{{ asset('public/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+        <div class="rectangle-shape1"><img src="{{ asset('/front/') }}/assets/img/rectangle-shape1.png" alt="image"></div>
+        <div class="rectangle-shape2"><img src="{{ asset('/front/') }}/assets/img/rectangle-shape2.png" alt="image"></div>
+        <div class="shape1"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+        <div class="shape2"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
+        <div class="shape3"><img src="{{ asset('/front/') }}/assets/img/shape/1.svg" alt="image"></div>
     </section>
 
 

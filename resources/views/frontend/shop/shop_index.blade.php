@@ -85,5 +85,5 @@
     
 @endsection
 @push('js')  
-<script src="{{ asset('public/frontend/js/post.js') }}"></script>  
+<script src="{{ asset('/frontend/js/post.js') }}"></script>  
 @endpush

@@ -14,35 +14,35 @@
 
     <!-- CSS Files
     ================================================== -->
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/jpreloader.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/animate.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/plugin.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/owl.theme.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/owl.transitions.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/magnific-popup.css" type="text/css">	
-    {{-- <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/jquery.countdown.css" type="text/css"> --}}
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/style.css" type="text/css">	
-	<link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/twentytwenty.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/jpreloader.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/animate.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/plugin.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/owl.theme.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/owl.transitions.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/magnific-popup.css" type="text/css">	
+    {{-- <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/jquery.countdown.css" type="text/css"> --}}
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/style.css" type="text/css">	
+	<link rel="stylesheet" href="{{ asset('/frontend/') }}/css/twentytwenty.css" type="text/css">
 
     <!-- custom background -->
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/bg.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/bg.css" type="text/css">
 
     <!-- color scheme -->
-	<link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/colors/green.css" type="text/css" id="colors">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/color.css" type="text/css">
+	<link rel="stylesheet" href="{{ asset('/frontend/') }}/css/colors/green.css" type="text/css" id="colors">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/color.css" type="text/css">
 
     <!-- load fonts -->
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/fonts/font-awesome/css/font-awesome.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/fonts/elegant_font/HTML_CSS/style.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/fonts/et-line-font/style.css" type="text/css">
-    <link rel="stylesheet" href="{{asset('public/css/toastr.css')}}">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/fonts/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/fonts/elegant_font/HTML_CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/fonts/et-line-font/style.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('/css/toastr.css')}}">
     @stack('css')
 	
 	<!-- custom font -->
-	<link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/font-style-2.css" type="text/css">
-    <link rel="stylesheet" href="{{ asset('public/frontend/') }}/css/custom.css" type="text/css">
+	<link rel="stylesheet" href="{{ asset('/frontend/') }}/css/font-style-2.css" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/frontend/') }}/css/custom.css" type="text/css">
     <style>
         #toast-container>.toast-error{
         background-image : red !important; 

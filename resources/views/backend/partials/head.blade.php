@@ -26,23 +26,23 @@
     <meta name="robots" content="noindex,nofollow,noarchive"/>
     <link rel="icon" href="{{asset(get_setting()->favicon)}}" type="image/x-icon"/>
     <!-- CSS files -->
-    <link rel="stylesheet" href="{{asset('public/asset/css/font-awesome.min.css')}}"/>
-    <link href="{{asset('public/asset/')}}/dist/libs/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
-    <link href="{{asset('public/asset/')}}/dist/css/tabler.min.css" rel="stylesheet"/>
-    <link href="{{asset('public/asset/')}}/dist/css/tabler-buttons.min.css" rel="stylesheet"/>
-    <link href="{{asset('public/asset/')}}/dist/css/demo.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="{{asset('public/css/toastr.css')}}">
-    <link href="{{ asset('public/asset/') }}/dist/libs/selectize/dist/css/selectize.css" rel="stylesheet"/>
-    <script src="{{ asset('public/asset/js/ckeditor.js') }}"></script>
-    <link rel="stylesheet" href="{{asset('public/asset/css/gijgo.min.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/asset/css/font-awesome.min.css')}}"/>
+    <link href="{{asset('/asset/')}}/dist/libs/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <link href="{{asset('/asset/')}}/dist/css/tabler.min.css" rel="stylesheet"/>
+    <link href="{{asset('/asset/')}}/dist/css/tabler-buttons.min.css" rel="stylesheet"/>
+    <link href="{{asset('/asset/')}}/dist/css/demo.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="{{asset('/css/toastr.css')}}">
+    <link href="{{ asset('/asset/') }}/dist/libs/selectize/dist/css/selectize.css" rel="stylesheet"/>
+    <script src="{{ asset('/asset/js/ckeditor.js') }}"></script>
+    <link rel="stylesheet" href="{{asset('/asset/css/gijgo.min.css')}}"/>
     @if (@get_color())
-      <link rel="stylesheet" href="{{asset('public/asset/css/'.get_color().'.css')}}"/>        
+      <link rel="stylesheet" href="{{asset('/asset/css/'.get_color().'.css')}}"/>        
     @else        
-      <link rel="stylesheet" href="{{asset('public/asset/css/1.css')}}"/>
+      <link rel="stylesheet" href="{{asset('/asset/css/1.css')}}"/>
     @endif
 
     @stack('css')
-    <link rel="stylesheet" href="{{asset('public/asset/css/custom.css')}}"/>
+    <link rel="stylesheet" href="{{asset('/asset/css/custom.css')}}"/>
     <style>
 
     </style>

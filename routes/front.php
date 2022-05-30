@@ -1,5 +1,7 @@
 <?php 
 
+use Illuminate\Support\Facades\Route;
+
 Route::group(['namespace' =>'Frontend'],function(){
     // user
     Route::get('/user/login', 'HomeController@login')->name('front.login');

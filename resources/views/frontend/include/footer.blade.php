@@ -68,7 +68,7 @@
         </div>
     </div>
 
-    <div class="circle-map"><img src="{{ asset('public/front/') }}/assets/img/circle-map.png" alt="image"></div>
+    <div class="circle-map"><img src="{{ asset('/front/') }}/assets/img/circle-map.png" alt="image"></div>
 </footer>
 <!-- End Footer Area -->
 

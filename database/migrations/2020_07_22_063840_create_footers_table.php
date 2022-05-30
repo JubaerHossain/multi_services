@@ -26,12 +26,12 @@ class CreateFootersTable extends Migration
         });
         DB::table('footers')->insert([
             [
-                'title' => 'X-TeamIt Ltd',
+                'title' => 'Honest Traders Ltd',
                 'button_name' => 'Click Here',
                 'banner_img' => 'public/front/assets/img/banner-img1.png',
                 'button_url' => '',
                 'header_description' =>  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
-                'footer_description' => 'We are team based on Los Angeles. Our expertise on X-TeamIT. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+                'footer_description' => 'We are team based on Los Angeles. Our expertise on Honest Traders. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
                 'created_at' => Carbon::now()
             ],
         ]);

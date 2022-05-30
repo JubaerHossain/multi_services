@@ -222,7 +222,7 @@
   </div>
 @endsection   
 @push('js')        
-    <script src="{{asset('public/asset/')}}/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="{{asset('/asset/')}}/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
     <script>
       // @formatter:off
       document.addEventListener("DOMContentLoaded", function () {

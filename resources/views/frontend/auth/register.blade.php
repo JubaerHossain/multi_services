@@ -25,9 +25,9 @@
         <div class="row align-items-center justify-content-between">
             <!-- Register Thumbnail-->
             <div class="col-12 col-lg-6">
-                <div class="register-thumbnail mb-50"><img src="{{ asset('public/front/assets/img/hero-3.png')}}" alt=""></div>
+                <div class="register-thumbnail mb-50"><img src="{{ asset('/front/assets/img/hero-3.png')}}" alt=""></div>
                 <div class="col-12 col-lg-6">
-                <div class="register-thumbnail mb-50"><img src="{{ asset('public/front/assets/img/hero-3.png')}}" alt=""></div>
+                <div class="register-thumbnail mb-50"><img src="{{ asset('/front/assets/img/hero-3.png')}}" alt=""></div>
                 </div>
             </div>
             <!-- Register Card-->

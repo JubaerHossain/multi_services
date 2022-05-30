@@ -221,5 +221,5 @@
 
 @endsection
 @push('js')
-<script src="{{asset('public/asset/dist/js/pos.js')}}"></script>
+<script src="{{asset('/asset/dist/js/pos.js')}}"></script>
 @endpush
