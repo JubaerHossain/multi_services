@@ -30,7 +30,7 @@
         <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/style.css">
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="{{ asset('public/front/') }}/assets/css/responsive.css">
-        <title>X-teamit - @yield('title')</title>
+        <title>Honest-tradersit - @yield('title')</title>
         <meta name="author" content="{{get_setting()->site_name}}">
 
         <link rel="icon" href="{{asset(get_setting()->favicon)}}" type="image/x-icon"/>
