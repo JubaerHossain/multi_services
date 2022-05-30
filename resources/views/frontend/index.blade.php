@@ -1,4 +1,4 @@
-@extends('Frontend.layouts.app')
+@extends('frontendlayouts.app')
 @section('title','Leading It Company')
 @section('content')
  <!-- Start Main Banner Area -->

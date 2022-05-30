@@ -1,4 +1,4 @@
-@extends('frontend.layouts.app')
+@extends('frontendlayouts.app')
 @section('title','Shop Cart')
 @push('css')
 @endpush

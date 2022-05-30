@@ -1,7 +1,7 @@
 
-  @include('frontend.partials.head')
-  @include('frontend.partials.header') 
+  @include('frontendpartials.head')
+  @include('frontendpartials.header') 
   @yield('content')
-  @include('frontend.partials.footer')
+  @include('frontendpartials.footer')
 
 
