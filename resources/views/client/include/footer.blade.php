@@ -26,8 +26,8 @@
        <div class="container">
           <div class="row justify-content-between">
              <div class="col-lg-3 col-sm-6  ftr-brand-pp">
-                <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="{{ asset('public/client/') }}/{{ asset('public/client/') }}/images/logo.png" alt="Logo" /></a>
-                <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="{{ asset('public/client/') }}/{{ asset('public/client/') }}/images/white-logo.png"
+                <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="{{ asset('/public/client/') }}/{{ asset('/public/client/') }}/images/logo.png" alt="Logo" /></a>
+                <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="{{ asset('/public/client/') }}/{{ asset('/public/client/') }}/images/white-logo.png"
                       alt="Logo" /></a>
                 <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter
                    your email</p>
@@ -65,7 +65,7 @@
              <div class="col-lg-4 col-sm-6 footer-blog-">
                 <h5>Latest Blogs</h5>
                 <div class="single-blog-">
-                   <div class="post-thumb"><a href="#"><img src="{{ asset('public/client/') }}/images/blog/blog-small.jpg" alt="blog"></a></div>
+                   <div class="post-thumb"><a href="#"><img src="{{ asset('/public/client/') }}/images/blog/blog-small.jpg" alt="blog"></a></div>
                    <div class="content">
                       <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span>
                       </p>
@@ -74,7 +74,7 @@
                    </div>
                 </div>
                 <div class="single-blog-">
-                   <div class="post-thumb"><a href="#"><img src="{{ asset('public/client/') }}/images/blog/blog-small.jpg" alt="blog"></a></div>
+                   <div class="post-thumb"><a href="#"><img src="{{ asset('/public/client/') }}/images/blog/blog-small.jpg" alt="blog"></a></div>
                    <div class="content">
                       <p class="post-meta"><span class="post-date"><i class="far fa-clock"></i>April 15, 2020</span>
                       </p>
@@ -96,10 +96,10 @@
              </div>
              <div class="col-lg-8 v-center">
                 <ul class="footer-badges-">
-                   <li><a href="#"><img src="{{ asset('public/client/') }}/images/about/badges-a.png" alt="badges"></a></li>
-                   <li><a href="#"><img src="{{ asset('public/client/') }}/images/about/badges-b.png" alt="badges"></a></li>
-                   <li><a href="#"><img src="{{ asset('public/client/') }}/images/about/badges-c.png" alt="badges"></a></li>
-                   <li><a href="#"><img src="{{ asset('public/client/') }}/images/about/badges-d.png" alt="badges"></a></li>
+                   <li><a href="#"><img src="{{ asset('/public/client/') }}/images/about/badges-a.png" alt="badges"></a></li>
+                   <li><a href="#"><img src="{{ asset('/public/client/') }}/images/about/badges-b.png" alt="badges"></a></li>
+                   <li><a href="#"><img src="{{ asset('/public/client/') }}/images/about/badges-c.png" alt="badges"></a></li>
+                   <li><a href="#"><img src="{{ asset('/public/client/') }}/images/about/badges-d.png" alt="badges"></a></li>
                 </ul>
              </div>
           </div>
@@ -168,7 +168,7 @@
                       </form>
                    </div>
                 </div>
-                <div class="innerright" data-background="images/service/mockup-app.jpg"></div>
+                <div class="innerright" data-background="{{ asset('/public/client/') }}/images/service/mockup-app.jpg"></div>
              </div>
           </div>
        </div>
@@ -177,15 +177,15 @@
  <!-- lead generaton popup end -->
 
  <!-- js placed at the end of the document so the pages load faster -->
- <script src="{{ asset('public/client/') }}js/vendor/modernizr-3.5.0.min.js"></script>
- <script src="{{ asset('public/client/') }}js/jquery.min.js"></script>
- <script src="{{ asset('public/client/') }}js/bootstrap.bundle.min.js"></script>
- <script src="{{ asset('public/client/') }}js/plugin.min.js"></script>
- <script src="{{ asset('public/client/') }}js/preloader.js"></script>
- <script src="{{ asset('public/client/') }}js/dark-mode.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/vendor/modernizr-3.5.0.min.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/jquery.min.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/bootstrap.bundle.min.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/plugin.min.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/preloader.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/dark-mode.js"></script>
  <!--common script file-->
- <script src="{{ asset('public/client/') }}js/main.js"></script>
- <script src="{{ asset('public/client/') }}js/progress-bar.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/main.js"></script>
+ <script src="{{ asset('/public/client/') }}/js/progress-bar.js"></script>
  <script>
     $(window).on('load', function () {
        var delayMs = 4000; // delay in milliseconds

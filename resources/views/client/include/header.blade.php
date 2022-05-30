@@ -17,8 +17,8 @@
     <div class="container-fluid m-pad">
         <div class="menu-header">
             <div class="dsk-logo"><a class="nav-brand" href="./">
-                    <img src="{{ asset('public/client/') }}/images/white-logo.png" alt="Logo" class="mega-white-logo" />
-                    <img src="{{ asset('public/client/') }}/images/logo.png" alt="Logo" class="mega-darks-logo" />
+                    <img src="{{ asset('/public/client/') }}/images/white-logo.png" alt="Logo" class="mega-white-logo" />
+                    <img src="{{ asset('/public/client/') }}/images/logo.png" alt="Logo" class="mega-darks-logo" />
                 </a>
             </div>
             <div class="custom-nav" role="navigation">
@@ -93,14 +93,14 @@
                                 <div class="inquiry-card-nn hrbg">
                                     <div class="title-inq-c">FOR HR DEPARTMENT</div>
                                     <ul>
-                                        <li class="mb0"><img src="{{ asset('public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> <a href="tel:1111111111">+1-123-456-7890</a></li>
+                                        <li class="mb0"><img src="{{ asset('/public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> <a href="tel:1111111111">+1-123-456-7890</a></li>
                                     </ul>
                                 </div>
                                 <div class="inquiry-card-nn">
                                     <div class="title-inq-c">FOR SALES DEPARTMENT</div>
                                     <ul>
-                                        <li><a href="tel:1111111111"><img src="{{ asset('public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> +1-123-456-7890</a></li>
-                                        <li><a href="tel:1111111111"><img src="{{ asset('public/client/') }}/images/flags/au.svg" alt="australia office" class="flags-size"> +1-123-456-7890</a></li>
+                                        <li><a href="tel:1111111111"><img src="{{ asset('/public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> +1-123-456-7890</a></li>
+                                        <li><a href="tel:1111111111"><img src="{{ asset('/public/client/') }}/images/flags/au.svg" alt="australia office" class="flags-size"> +1-123-456-7890</a></li>
                                         <li><i class="fab fa-skype"></i><a href="skype:Honest.company?call">Honest.company</a></li>
                                         <li><i class="fas fa-envelope"></i><a href="mailto:honesttradersbd@gmail.com">honesttradersbd@gmail.com</a></li>
                                     </ul>
@@ -173,14 +173,14 @@
                                 <div class="inquiry-card-nn hrbg">
                                     <div class="title-inq-c">FOR HR DEPARTMENT</div>
                                         <ul>
-                                            <li class="mb0"><img src="{{ asset('public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> <a href="tel:1111111111">+1-123-456-7890</a></li>
+                                            <li class="mb0"><img src="{{ asset('/public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> <a href="tel:1111111111">+1-123-456-7890</a></li>
                                         </ul>
                                     </div>
                                     <div class="inquiry-card-nn">
                                         <div class="title-inq-c">FOR SALES DEPARTMENT</div>
                                         <ul>
-                                            <li><a href="tel:1111111111"><img src="{{ asset('public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> +1-123-456-7890</a></li>
-                                            <li><a href="tel:1111111111"><img src="{{ asset('public/client/') }}/images/flags/au.svg" alt="australia office" class="flags-size"> +1-123-456-7890</a></li>
+                                            <li><a href="tel:1111111111"><img src="{{ asset('/public/client/') }}/images/flags/us.svg" alt="us office" class="flags-size"> +1-123-456-7890</a></li>
+                                            <li><a href="tel:1111111111"><img src="{{ asset('/public/client/') }}/images/flags/au.svg" alt="australia office" class="flags-size"> +1-123-456-7890</a></li>
                                             <li><i class="fab fa-skype"></i><a href="skype:Honest.company?call">Honest.company</a></li>
                                             <li><i class="fas fa-envelope"></i><a href="mailto:honesttradersbd@gmail.com">honesttradersbd@gmail.com</a></li>
                                         </ul>
@@ -272,25 +272,25 @@
             <p class="mt10">Please fill out the form below if you have a plan or project in mind that you'd like to
                 share with us.</p>
             <div class="media mt15">
-                <div class="icondive"><img src="{{ asset('public/client/') }}/images/icons/call.svg" alt="icon"></div>
+                <div class="icondive"><img src="{{ asset('/public/client/') }}/images/icons/call.svg" alt="icon"></div>
                 <div class="media-body getintouchinfo">
                     <a href="tel:123456790">+8801234567890 <span>Mon-Fri 9am - 6pm</span></a>
                 </div>
             </div>
             <div class="media mt15">
-                <div class="icondive"><img src="{{ asset('public/client/') }}/images/icons/whatsapp.svg" alt="icon"></div>
+                <div class="icondive"><img src="{{ asset('/public/client/') }}/images/icons/whatsapp.svg" alt="icon"></div>
                 <div class="media-body getintouchinfo">
                     <a href="tel:123456790">+8801234567890 <span>Mon-Fri 9am - 6pm</span></a>
                 </div>
             </div>
             <div class="media mt15">
-                <div class="icondive"><img src="{{ asset('public/client/') }}/images/icons/mail.svg" alt="icon"></div>
+                <div class="icondive"><img src="{{ asset('/public/client/') }}/images/icons/mail.svg" alt="icon"></div>
                 <div class="media-body getintouchinfo">
                     <a href="mailto:honesttradersbd@sookh.com">honesttradersbd@sookh.com <span>Online Support</span></a>
                 </div>
             </div>
             <div class="media mt15">
-                <div class="icondive"><img src="{{ asset('public/client/') }}/images/icons/map.svg" alt="icon"></div>
+                <div class="icondive"><img src="{{ asset('/public/client/') }}/images/icons/map.svg" alt="icon"></div>
                 <div class="media-body getintouchinfo">
                     <a href="mailto:honesttradersbd@sookh.com">Banani, Dhaka, Bangladesh<span>Visit Our Office</span></a>
                 </div>

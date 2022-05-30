@@ -22,7 +22,7 @@
                     <p class="wow fadeIn" data-wow-delay="0.6s">Website and App development solution for transforming and
                         innovating businesses.</p>
                     <a href="case-study.html" class="Honest-btn2 wow fadeIn" data-wow-delay="0.8s">View Case Studies <i class="fas fa-chevron-right fa-ani"></i></a>
-                    <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="{{ asset('public/client/') }}/images/hero/awards-logo.png" alt="awards-logo" class="img-fluid" /></div>
+                    <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="{{ asset('/public/client/') }}/images/hero/awards-logo.png" alt="awards-logo" class="img-fluid" /></div>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -39,7 +39,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/vr.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/vr.png">
                                  </div>
                                  <div class="title-serv-c"><span>Social</span> Networking</div>
                               </div>
@@ -49,7 +49,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/app-develop.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/app-develop.png">
                                  </div>
                                  <div class="title-serv-c"><span>Digital</span> Marketing</div>
                               </div>
@@ -59,7 +59,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/startup.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/startup.png">
                                  </div>
                                  <div class="title-serv-c"><span>Ecommerce</span> Development</div>
                               </div>
@@ -69,7 +69,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/car-rental.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/car-rental.png">
                                  </div>
                                  <div class="title-serv-c"><span>Banking</span> Service</div>
                               </div>
@@ -79,7 +79,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/marketing.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/marketing.png">
                                  </div>
                                  <div class="title-serv-c"><span>Enterprise</span> Service</div>
                               </div>
@@ -89,7 +89,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="images/service/ewallet.png">
+                                    <img alt="custom-sport" src="{{ asset('/public/client/') }}/images/service/ewallet.png">
                                  </div>
                                  <div class="title-serv-c"><span>Health</span> Service</div>
                               </div>
@@ -146,7 +146,7 @@
             </div>
             <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp" data-wow-delay=".4s">
                 <div class="service-sec-list srvc-bg-nx srcl1">
-                    <img src="{{ asset('public/client/') }}/images/icons/development.svg" alt="service">
+                    <img src="{{ asset('/public/client/') }}/images/icons/development.svg" alt="service">
                     <h5 class="mb10">Web Development</h5>
                     <ul class="-service-list">
                         <li> <a href="#">PHP</a> </li>
@@ -160,7 +160,7 @@
             </div>
             <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus wow fadeInUp" data-wow-delay=".6s">
                 <div class="service-sec-list srvc-bg-nx srcl2">
-                    <img src="{{ asset('public/client/') }}/images/icons/ecommerce.svg" alt="service">
+                    <img src="{{ asset('/public/client/') }}/images/icons/ecommerce.svg" alt="service">
                     <h5 class="mb10">Ecommerce Development</h5>
                     <ul class="-service-list">
                         <li> <a href="#">Laravel</a> </li>
@@ -174,7 +174,7 @@
             </div>
             <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp" data-wow-delay=".8s">
                 <div class="service-sec-list srvc-bg-nx srcl3">
-                    <img src="{{ asset('public/client/') }}/images/icons/app.svg" alt="service">
+                    <img src="{{ asset('/public/client/') }}/images/icons/app.svg" alt="service">
                     <h5 class="mb10">Mobile App Development</h5>
                     <ul class="-service-list">
                         <li> <a href="#">iPhone </a> </li>
@@ -187,7 +187,7 @@
             </div>
             <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-3-cus mt30- wow fadeInUp" data-wow-delay="1s">
                 <div class="service-sec-list srvc-bg-nx srcl4">
-                    <img src="{{ asset('public/client/') }}/images/icons/tech.svg" alt="service">
+                    <img src="{{ asset('/public/client/') }}/images/icons/tech.svg" alt="service">
                     <h5 class="mb10">Trending Technologies</h5>
                     <ul class="-service-list">
                         <li> <a href="#">React.JS </a> </li>
@@ -200,7 +200,7 @@
             </div>
             <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="col-lg-6-cus mt30- wow fadeInUp" data-wow-delay="1.2s">
                 <div class="service-sec-list srvc-bg-nx srcl5">
-                    <img src="{{ asset('public/client/') }}/images/icons/seo.svg" alt="service">
+                    <img src="{{ asset('/public/client/') }}/images/icons/seo.svg" alt="service">
                     <h5 class="mb10">Digital Marketing</h5>
                     <ul class="-service-list">
                         <li> <a href="#">SEO </a> </li>
@@ -229,7 +229,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="statistics">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/startup.svg" alt="years" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/startup.svg" alt="years" class="img-fluid" />
                     </div>
                     <div class="statnumb">
                         <span class="counter">15</span><span>+</span>
@@ -240,7 +240,7 @@
             <div class="col-lg-4 col-sm-6">
                 <div class="statistics">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/team.svg" alt="team" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/team.svg" alt="team" class="img-fluid" />
                     </div>
                     <div class="statnumb">
                         <span class="counter">80</span><span>+</span>
@@ -253,7 +253,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/deal.svg" alt="happy" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/deal.svg" alt="happy" class="img-fluid" />
                     </div>
                     <div class="statnumb">
                         <span class="counter">450</span>
@@ -264,7 +264,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/computers.svg" alt="project" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/computers.svg" alt="project" class="img-fluid" />
                     </div>
                     <div class="statnumb counter-number">
                         <span class="counter">48</span><span>k</span>
@@ -275,7 +275,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/worker.svg" alt="work" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/worker.svg" alt="work" class="img-fluid" />
                     </div>
                     <div class="statnumb">
                         <span class="counter">95</span><span>k</span>
@@ -286,7 +286,7 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="statistics mb0">
                     <div data-tilt data-tilt-max="20" data-tilt-speed="1000" class="statistics-img">
-                        <img src="{{ asset('public/client/') }}/images/icons/customer-service.svg" alt="support" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/icons/customer-service.svg" alt="support" class="img-fluid" />
                     </div>
                     <div class="statnumb">
                         <span class="counter">24</span><span>/</span><span class="counter">7</span>
@@ -310,21 +310,21 @@
                     <p>Our company excels in delivering customized software solutions as a well-known software development company. With our best-in-class software development services, we serve small, medium, and large enterprises. We won customers' hearts with our progressive roadmap, efficient project management, and consistent delivery. Outsource software development services with us, as we serve with care to gain customer's satisfaction. Here’s how we care our beloved client’s.</p>
                     <div class="itm-media-object mt40 tilt-3d">
                         <div class="media">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{ asset('public/client/') }}/images/icons/computers.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{ asset('/public/client/') }}/images/icons/computers.svg" alt="icon" class="layer"></div>
                             <div class="media-body">
                                 <h4>Progressive Guidelines</h4>
                                 <p>Our experts study the Client's business and portfolio with care. Then, after conducting intensive research and analysis, they recommend the best strategic solution.</p>
                             </div>
                         </div>
                         <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{ asset('public/client/') }}/images/icons/worker.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"><img src="{{ asset('/public/client/') }}/images/icons/worker.svg" alt="icon" class="layer"></div>
                             <div class="media-body">
                                 <h4>Organized Management</h4>
                                 <p>We offer a comprehensive project management approach for any software development project. And we do timely responses sincerely.</p>
                             </div>
                         </div>
                         <div class="media mt40">
-                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="{{ asset('public/client/') }}/images/icons/deal.svg" alt="icon" class="layer"></div>
+                            <div class="img-ab- base" data-tilt data-tilt-max="20" data-tilt-speed="1000"> <img src="{{ asset('/public/client/') }}/images/icons/deal.svg" alt="icon" class="layer"></div>
                             <div class="media-body">
                                 <h4>Versatile Engagement</h4>
                                 <p>We make most efforts to keep transparency. Our team has the perfect combination of skills to provide improved software solutions.</p>
@@ -334,7 +334,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img src="{{ asset('public/client/') }}/images/about/about-company.jpg" alt="image" class="img-fluid"></div>
+                <div data-tilt data-tilt-max="5" data-tilt-speed="1000" class="single-image bg-shape-dez wow fadeIn" data-wow-duration="2s"><img src="{{ asset('/public/client/') }}/images/about/about-company.jpg" alt="image" class="img-fluid"></div>
                 <p class="text-center mt30">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <div class="cta-card mt60 text-center">
@@ -363,7 +363,7 @@
             <div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-                        <a href="#"><img src="{{ asset('public/client/') }}/images/portfolio/image-d.jpg" alt="image" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ asset('/public/client/') }}/images/portfolio/image-d.jpg" alt="image" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Ecommerce Development</a></h4>
@@ -374,7 +374,7 @@
             <div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-                        <a href="#"><img src="{{ asset('public/client/') }}/images/portfolio/image-1.jpg" alt="image" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ asset('/public/client/') }}/images/portfolio/image-1.jpg" alt="image" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Creative App</a></h4>
@@ -385,7 +385,7 @@
             <div class="col-lg-4 col-sm-4 mt60 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-                        <a href="#"><img src="{{ asset('public/client/') }}/images/portfolio/image-6.jpg" alt="image" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ asset('/public/client/') }}/images/portfolio/image-6.jpg" alt="image" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Brochure Design</a></h4>
@@ -396,7 +396,7 @@
             <div class="col-lg-8 col-sm-8 mt60 wow fadeInUp" data-wow-delay="0.8s">
                 <div class="isotope_item hover-scale">
                     <div class="item-image" data-tilt data-tilt-max="2" data-tilt-speed="1000">
-                        <a href="#"><img src="{{ asset('public/client/') }}/images/portfolio/image-c.jpg" alt="image" class="img-fluid" /> </a>
+                        <a href="#"><img src="{{ asset('/public/client/') }}/images/portfolio/image-c.jpg" alt="image" class="img-fluid" /> </a>
                     </div>
                     <div class="item-info">
                         <h4><a href="#">Icon Pack</a></h4>
@@ -424,92 +424,92 @@
                 <div class="clients-logos text-center col-12">
                     <ul class="row text-center clearfix">
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".2s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-1.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-1.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Shutter, USA</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".4s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-2.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-2.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Hipster, USA</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".6s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-3.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-3.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Happy, USA</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay=".8s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-4.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-4.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Opera Tours, USA</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-5.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-5.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Royale Stone, UK</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.2s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-6.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-6.png" alt="clients" class="img-fluid">
                             </div>
                             <p>QTP, Australia</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.4s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-7.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-7.png" alt="clients" class="img-fluid">
                             </div>
                             <p>PAPA, Malaysia</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.6s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-8.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-8.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Coffee, Australia</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="1.8s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-9.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-9.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Bakery, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-10.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-10.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Iconico, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.2s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-11.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-11.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Tom N Jerry, UK</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.4s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-12.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-12.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Arch, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.6s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-9.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-9.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Aro Group, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="2.8s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-3.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-3.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Tom Group, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-4.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-4.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Premier Pipes, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.2s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-1.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-1.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Dynamic, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.4s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-7.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-7.png" alt="clients" class="img-fluid">
                             </div>
                             <p>Fns Inc, India</p>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4 col-6 wow fadeIn" data-wow-delay="3.6s">
-                            <div class="brand-logo"><img src="{{ asset('public/client/') }}/images/client/clients-2.png" alt="clients" class="img-fluid">
+                            <div class="brand-logo"><img src="{{ asset('/public/client/') }}/images/client/clients-2.png" alt="clients" class="img-fluid">
                             </div>
                             <p>RP School, India</p>
                         </li>
@@ -535,73 +535,73 @@
                 <div class="work-card-set">
                     <div class="icon-set wow fadeIn" data-wow-delay=".2s">
                         <div class="work-card cd1">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-1.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-1.png" alt="Industries" /></div>
                             <p>Social Networking</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay=".4s">
                         <div class="work-card cd2">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-2.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-2.png" alt="Industries" /></div>
                             <p>Digital Marketing</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay=".6s">
                         <div class="work-card cd3">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-3.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-3.png" alt="Industries" /></div>
                             <p>Ecommerce Development</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay=".8s">
                         <div class="work-card cd4">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-4.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-4.png" alt="Industries" /></div>
                             <p>Video Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="1s">
                         <div class="work-card cd5">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-5.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-5.png" alt="Industries" /></div>
                             <p>Banking Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="1.2s">
                         <div class="work-card cd6">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-6.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-6.png" alt="Industries" /></div>
                             <p>Enterprise Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="1.4s">
                         <div class="work-card cd7">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-7.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-7.png" alt="Industries" /></div>
                             <p>Education Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="1.6s">
                         <div class="work-card cd8">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-8.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-8.png" alt="Industries" /></div>
                             <p>Tour and Travels</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="1.8s">
                         <div class="work-card cd9">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-9.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-9.png" alt="Industries" /></div>
                             <p>Health Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="2s">
                         <div class="work-card cd10">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-10.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-10.png" alt="Industries" /></div>
                             <p>Event & Ticket</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="2.2s">
                         <div class="work-card cd11">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-11.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-11.png" alt="Industries" /></div>
                             <p>Restaurant Service</p>
                         </div>
                     </div>
                     <div class="icon-set wow fadeIn" data-wow-delay="2.4s">
                         <div class="work-card cd12">
-                            <div class="icon-bg"><img src="{{ asset('public/client/') }}/images/icons/icon-12.png" alt="Industries" /></div>
+                            <div class="icon-bg"><img src="{{ asset('/public/client/') }}/images/icons/icon-12.png" alt="Industries" /></div>
                             <p>Business Consultant</p>
                         </div>
                     </div>
@@ -627,7 +627,7 @@
                 <div class="video-testimonials owl-carousel">
                     <div class="video-review" data-tilt data-tilt-max="5" data-tilt-speed="1000">
                         <a class="video-link" href="https://www.youtube.com/watch?v=SZEflIVnhH8?autoplay=1&amp;rel=0">
-                            <img src="{{ asset('public/client/') }}/images/client/client-pic.jpg" alt="client" class="img-fluid">
+                            <img src="{{ asset('/public/client/') }}/images/client/client-pic.jpg" alt="client" class="img-fluid">
                             <div class="review-vid-details">
                                 <div class="-vid-ico"><span class="triangle-play2"></span></div>
                                 <p>Cina Cleaves</p>
@@ -636,7 +636,7 @@
                     </div>
                     <div class="video-review" data-tilt data-tilt-max="5" data-tilt-speed="1000">
                         <a class="video-link" href="https://www.youtube.com/watch?v=SZEflIVnhH8?autoplay=1&amp;rel=0">
-                            <img src="{{ asset('public/client/') }}/images/client/client-pic-a.jpg" alt="client" class="img-fluid">
+                            <img src="{{ asset('/public/client/') }}/images/client/client-pic-a.jpg" alt="client" class="img-fluid">
                             <div class="review-vid-details">
                                 <div class="-vid-ico"><span class="triangle-play2"></span></div>
                                 <p>Jokvch Marlin</p>
@@ -655,7 +655,7 @@
                         </div>
                         <div class="client-thumbs mt30">
                             <div class="media v-center">
-                                <div class="user-image bdr-radius"><img src="{{ asset('public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
+                                <div class="user-image bdr-radius"><img src="{{ asset('/public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
                                 <div class="media-body user-info v-center">
                                     <h5>Mike Smith</h5>
                                     <p>Business Owner, <small>Sydney, Australia</small></p>
@@ -671,7 +671,7 @@
                         </div>
                         <div class="client-thumbs mt30">
                             <div class="media v-center">
-                                <div class="user-image bdr-radius"><img src="{{ asset('public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
+                                <div class="user-image bdr-radius"><img src="{{ asset('/public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
                                 <div class="media-body user-info">
                                     <h5>Fred Chener</h5>
                                     <p>CEO of Aramxx, <small>Ohio, US State</small></p>
@@ -687,7 +687,7 @@
                         </div>
                         <div class="client-thumbs mt30">
                             <div class="media v-center">
-                                <div class="user-image bdr-radius"><img src="{{ asset('public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
+                                <div class="user-image bdr-radius"><img src="{{ asset('/public/client/') }}/images/user-thumb/girl.jpg" alt="girl" class="img-fluid" /></div>
                                 <div class="media-body user-info">
                                     <h5>Mathilda Burns</h5>
                                     <p>Backery Shop, <small>Tronto, Italy</small></p>
@@ -706,9 +706,9 @@
                         <p>Read our reviews from all over world.</p>
                     </div>
                     <div class="review-icons">
-                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".2s"><img src="{{ asset('public/client/') }}/images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
-                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".4s"><img src="{{ asset('public/client/') }}/images/about/reviews-icon-2.png" alt="review" class="img-fluid"></a>
-                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".6s"><img src="{{ asset('public/client/') }}/images/about/reviews-icon-3.png" alt="review" class="img-fluid"></a>
+                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".2s"><img src="{{ asset('/public/client/') }}/images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
+                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".4s"><img src="{{ asset('/public/client/') }}/images/about/reviews-icon-2.png" alt="review" class="img-fluid"></a>
+                        <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".6s"><img src="{{ asset('/public/client/') }}/images/about/reviews-icon-3.png" alt="review" class="img-fluid"></a>
                     </div>
                 </div>
             </div>
@@ -731,10 +731,10 @@
             </div>
         </div>
     </div>
-    <div class="shape shape-a1"><img src="{{ asset('public/client/') }}/images/shape/shape-3.svg" alt="shape"></div>
-    <div class="shape shape-a2"><img src="{{ asset('public/client/') }}/images/shape/shape-4.svg" alt="shape"></div>
-    <div class="shape shape-a3"><img src="{{ asset('public/client/') }}/images/shape/shape-13.svg" alt="shape"></div>
-    <div class="shape shape-a4"><img src="{{ asset('public/client/') }}/images/shape/shape-11.svg" alt="shape"></div>
+    <div class="shape shape-a1"><img src="{{ asset('/public/client/') }}/images/shape/shape-3.svg" alt="shape"></div>
+    <div class="shape shape-a2"><img src="{{ asset('/public/client/') }}/images/shape/shape-4.svg" alt="shape"></div>
+    <div class="shape shape-a3"><img src="{{ asset('/public/client/') }}/images/shape/shape-13.svg" alt="shape"></div>
+    <div class="shape shape-a4"><img src="{{ asset('/public/client/') }}/images/shape/shape-11.svg" alt="shape"></div>
 </section>
 <!--End CTA-->
 <!--Start Location-->
@@ -752,7 +752,7 @@
             <div class="col-lg-6 col-12 shape-loc wow fadeInUp" data-wow-delay=".2s">
                 <div class="office-card">
                     <div class="skyline-img" data-tilt data-tilt-max="4" data-tilt-speed="1000">
-                        <img src="{{ asset('public/client/') }}/images/location/dhaka-city.png" alt="Dhaka-City" class="img-fluid" />
+                        <img src="{{ asset('/public/client/') }}/images/location/dhaka-city.png" alt="Dhaka-City" class="img-fluid" />
                     </div>
                     <div class="office-text">
                         <h4>Dhaka Bangladesh</h4>
