@@ -1,0 +1,5 @@
+    @include('client.include.head')
+    @include('client.include.header')
+        @yield('content')
+    @include('client.include.footer')
+    @include('client.include.js')

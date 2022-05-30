@@ -23,7 +23,7 @@ class HomeController extends Controller
          $data['blogs'] = Blog::where('status',1)->latest()->get()->take(6);
          $data['clients'] = Client::where('status',1)->latest()->get();
          $data['testmonial'] = Testmonial::where('status',1)->latest()->get()->take(15);
-        return view('frontend.index',compact('data'));
+        return view('client.index',compact('data'));
     }
 
     function GetService(){
