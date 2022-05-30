@@ -1,4 +1,4 @@
-@extends('frontendlayout.master')
+@extends('frontend.layout.master')
 @section('title','Shop')
 @section('content')
             <!-- subheader -->
