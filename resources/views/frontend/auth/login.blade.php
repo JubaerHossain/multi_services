@@ -1,4 +1,4 @@
-@extends('Frontend.layouts.app')
+@extends('frontend.layouts.app')
 @section('title','Login')
 @section('content')
 <div class="page-title-area">
